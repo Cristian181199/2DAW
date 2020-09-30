@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+div#general {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  overflow: hidden;
+  display: block;
+}
+
+div#bloque1 {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: crimson;
+}
+
+div#bloque2 {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  float: right;
+  margin: auto;
+}
