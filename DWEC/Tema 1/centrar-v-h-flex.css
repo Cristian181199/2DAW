@@ -1,0 +1,19 @@
+#bloque {
+  height: 100vh;
+  display: flex;
+}
+
+#uno {
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  /* Centrar horizontalmente */
+  justify-content: center;
+  /* Centrar de manera vertical */
+  align-items: center;
+}
+#dos {
+  background-color: rgb(255, 187, 0);
+  width: 100px;
+  height: 100px;
+}

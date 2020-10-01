@@ -1,29 +1,61 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  background-color: darkolivegreen;
+  margin: 0;
+  padding: 0;
 }
 
-div#general {
+.ppal {
+  background-color: darkcyan;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+}
+.uno {
+  background-color: darkgoldenrod;
+  width: 200px;
+  height: 200px;
+  position: absolute;
   margin: auto;
-  width: 100%;
-  height: 100%;
-  background-color: aqua;
-  overflow: hidden;
-  display: block;
 }
-
-div#bloque1 {
-  display: block;
-  width: 250px;
-  height: 250px;
-  background-color: crimson;
+.dos {
+  background-color: darkgreen;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 400px;
+  left: 400px;
+  margin: auto;
 }
-
-div#bloque2 {
-  display: block;
-  width: 250px;
-  height: 250px;
-  background-color: black;
-  float: right;
+.tres {
+  background-color: darkorchid;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 400px;
+  right: 400px;
+  margin: auto;
+}
+.cuatro {
+  background-color: darkred;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  margin: auto;
+}
+.cinco {
+  background-color: darkblue;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
