@@ -74,3 +74,19 @@
   margin: 1em;
   border-radius: 1em;
 }
+
+#articulo1 {
+  position: fixed;
+}
+
+#articulo2 {
+  position: relative;
+}
+
+#articulo3 {
+  position: sticky;
+}
+
+#articulo4 {
+  position: absolute;
+}
