@@ -68,8 +68,8 @@
 }
 
 .articulo {
-  width: 96%;
-  height: 20%;
+  width: 807px;
+  height: 100px;
   background: #424242;
   margin: 1em;
   border-radius: 1em;
@@ -77,9 +77,6 @@
 
 #articulo1 {
   position: fixed;
-  width: 807px;
-  height: 100px;
-
 }
 
 #articulo2 {
@@ -92,6 +89,4 @@
 
 #articulo4 {
   position: absolute;
-  width: 807px;
-  height: 100px;
 }
