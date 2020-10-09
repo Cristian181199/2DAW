@@ -90,3 +90,8 @@
 #articulo4 {
   position: absolute;
 }
+
+#imagen {
+  width: 300px;
+  height: 300px;
+}
