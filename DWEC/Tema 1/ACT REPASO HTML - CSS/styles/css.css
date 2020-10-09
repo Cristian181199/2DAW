@@ -77,6 +77,7 @@
 
 #articulo1 {
   position: fixed;
+  z-index: 999;
 }
 
 #articulo2 {
