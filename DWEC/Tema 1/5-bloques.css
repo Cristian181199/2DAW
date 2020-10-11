@@ -1,0 +1,51 @@
+ #principal {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    /* centrar horizontalmente */
+    justify-content: center;
+  
+    /* centrar verticalmente */
+    align-items: center;
+  }
+  
+  #uno {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+  }
+  
+  #dos {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+  }
+  
+  #tres {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+  }
+
+  #cuatro {
+      height: 200px;
+      width: 200px;
+      background-color: black;
+      color: azure;
+      margin: 0px auto;
+  }
+
+  #cinco {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+}

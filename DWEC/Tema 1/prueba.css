@@ -1,0 +1,39 @@
+#arriba {
+    background-color: blue;
+    width: auto;
+    height: 33.33%;
+    display: flex;
+    /* centrar horizontalmente */
+    justify-content: center;
+
+    /* centrar verticalmente */
+    align-items: center;
+}
+
+#centro {
+    background-color: blueviolet;
+    width: auto;
+    height: 33.33%;
+}
+
+#abajo {
+    background-color: brown;
+    width: auto;
+    height: 33.33%;
+}
+
+  #uno {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+  }
+  
+  #dos {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: azure;
+    margin: 0px auto;
+  }
