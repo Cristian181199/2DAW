@@ -114,7 +114,6 @@
   margin: 0px auto;
 }
 
-
 #articulo3 {
   position: sticky;
 }
@@ -126,4 +125,80 @@
 #imagen {
   width: 300px;
   height: 300px;
+}
+
+#arriba {
+  background-color: blue;
+  width: auto;
+  height: 33.33%;
+  display: flex;
+  /* centrar horizontalmente */
+  justify-content: center;
+
+  /* centrar verticalmente */
+  align-items: center;
+}
+
+#centro {
+  background-color: blueviolet;
+  width: auto;
+  height: 33.33%;
+  display: flex;
+  /* centrar horizontalmente */
+  justify-content: center;
+
+  /* centrar verticalmente */
+  align-items: center;
+}
+
+#abajo {
+  background-color: brown;
+  width: auto;
+  height: 33.33%;
+  display: flex;
+  /* centrar horizontalmente */
+  justify-content: center;
+
+  /* centrar verticalmente */
+  align-items: center;
+}
+
+#one {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#two {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#three {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#four {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#five {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
 }
