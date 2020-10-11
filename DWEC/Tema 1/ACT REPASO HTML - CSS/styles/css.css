@@ -82,7 +82,38 @@
 
 #articulo2 {
   position: relative;
+  display: flex;
+  /* centrar horizontalmente */
+  justify-content: center;
+
+  /* centrar verticalmente */
+  align-items: center;
 }
+
+#uno {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#dos {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
+#tres {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: azure;
+  margin: 0px auto;
+}
+
 
 #articulo3 {
   position: sticky;
