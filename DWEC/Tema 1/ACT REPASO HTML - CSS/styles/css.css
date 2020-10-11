@@ -23,7 +23,7 @@
 }
 
 #header {
-  height: 15%;
+  height: 5%;
   background: #a4a4a4;
   border-radius: 1em;
   margin: 1em;
@@ -43,14 +43,15 @@
 }
 
 #footer {
-  height: 15%;
+  height: 2%;
   background: #424242;
   border-radius: 1em;
   margin: 1em;
+  text-align: center;
 }
 
 #section {
-  height: 95%;
+  height: 100%;
   width: 72%;
   background: #a4a4a4;
   border-radius: 1em;
@@ -59,7 +60,7 @@
 }
 
 #aside {
-  height: 95%;
+  height: 100%;
   width: 25%;
   background: #a4a4a4;
   border-radius: 1em;
@@ -123,82 +124,19 @@
 }
 
 #imagen {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
-#arriba {
-  background-color: blue;
-  width: auto;
-  height: 33.33%;
-  display: flex;
-  /* centrar horizontalmente */
-  justify-content: center;
-
-  /* centrar verticalmente */
-  align-items: center;
+#tabla {
+  background-color: aliceblue;
+  border-color: black;
 }
 
-#centro {
-  background-color: blueviolet;
-  width: auto;
-  height: 33.33%;
-  display: flex;
-  /* centrar horizontalmente */
-  justify-content: center;
-
-  /* centrar verticalmente */
-  align-items: center;
-}
-
-#abajo {
-  background-color: brown;
-  width: auto;
-  height: 33.33%;
-  display: flex;
-  /* centrar horizontalmente */
-  justify-content: center;
-
-  /* centrar verticalmente */
-  align-items: center;
-}
-
-#one {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: azure;
-  margin: 0px auto;
-}
-
-#two {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: azure;
-  margin: 0px auto;
-}
-
-#three {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: azure;
-  margin: 0px auto;
-}
-
-#four {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: azure;
-  margin: 0px auto;
-}
-
-#five {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: azure;
-  margin: 0px auto;
+ul li {
+  display: block;
+  margin: auto;
+  list-style: none;
+  height: 25%;
+  text-align: center;
 }
