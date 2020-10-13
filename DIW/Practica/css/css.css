@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera {
+    background-color: aquamarine;
+    height: 10%;
+    /* border-radius: 1em; -> Esto redondea los bordes */
+    margin: 1em;
+    text-align: center;
+}
+
+#principal {
+    background-color: chartreuse;
+    height: 100%;
+    width: 72%;
+    /* border-radius: 1em; -> Esto redondea los bordes */
+    float: left;
+    margin: 0.5em;
+}
+
+#barra {
+    background-color: coral;
+    height: 100%;
+    width: 25%;
+    /* border-radius: 1em; -> Esto redondea los bordes */
+    float: right;
+    margin: 0.5em;
+}
+
+#imagenx {
+    height: 250px;
+    width: 250px;
+    border-radius: 1em;
+    margin-right: 30px;
+}
+
+#lista-principio {
+    list-style: none;
+}
+
+#tabla-principio {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+#nombre {
+    font-weight: normal;
+}
