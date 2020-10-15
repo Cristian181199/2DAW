@@ -7,7 +7,11 @@
 </head>
 
 <body>
-    <?php echo "Hola, Mundo" ?>
+    <form action="saluda.php" method="get">
+        <label for="nom"> Escribe tu nombre: </label>
+            <input type="text" name="nombre" id="nom">
+            <button type="submit">Saludar</button>
+    </form>
 </body>
 
 </html>
