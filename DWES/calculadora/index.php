@@ -39,6 +39,14 @@
 
             <label for="op">Operacion: </label>
             <input type="text" name="op" value="<?= $op ?>" id="op"> <br>
+            <select name="op" id="op">
+                <?php foreach (OPS as $o): ?>
+                    <option value="<?= $o ?>" <?= selected($op, $o) ?> >
+                        <?= $o ?>
+                    </option>
+                <?php endforeach ?>
+            </select> <br>
+
 
             <button type="submit">Calcular</button> <br>
 

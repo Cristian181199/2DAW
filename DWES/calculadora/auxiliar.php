@@ -1,5 +1,10 @@
 <?php
 
+function selected()
+{
+    
+}
+
 /**
  * Muestra un mensaje de error en pantalla.
  *
