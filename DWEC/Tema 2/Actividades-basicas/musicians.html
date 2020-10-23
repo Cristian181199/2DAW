@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        var musicians = prompt("Introduce el número de músicos");
+        var resultado = nummusicos(musicians);
+
+        alert(resultado);
+        function nummusicos(musicians) {
+            if (musicians <= 0) {
+                return "not a group";
+            }
+                else if (musicians == 1){
+                    return "solo";
+                }
+                else if (musicians == 2){
+                    return "duet";
+                }
+                else if (musicians == 3){
+                    return"trio";
+                }
+                else if (musicians == 4){
+                    return"quartet";
+                }
+                else {
+                    return"this is a large group";
+                }
+        }
+    </script>
+</body>
+</html>
