@@ -1,0 +1,90 @@
+* {
+    font-family: 'Fira Code';
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Regular.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 60px 0 0 0;
+}
+
+#principal {
+    margin: 0px auto;
+    width: 100%;
+}
+ 
+#myheader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#contenido {
+    height: 100%;
+    overflow: auto;
+    padding: 9% 1% 0% 1%;
+    width: 98%;
+}
+
+#izquierda {
+    height: 100% auto;
+    width: 84%;
+    float: left;
+    border-radius: 1em;
+}
+
+#derecha {
+    height: 100% auto;
+    background-color: #333;
+    width: 15%;
+    float: right;
+    border-radius: 1em;
+}
+.li-div-derecha a {
+    color: #FFFFFF;
+}
+
+.estilo1 {
+    margin: 5px;
+    height: auto;
+}
+
+#imagenx {
+    width: 250px;
+    height: 250px;
+    border-radius: 1em;
+}
+
+#prueba {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+#tabla-experiencia {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #333;
+}
+
+
+#tabla-educacion {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #333;
+}
+
+#github {
+    list-style-image: url("/images/github.png");
+}
