@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background-image: url(../images/fondo.jpg), url(../images/fondo_div.png);
+  background-size: 100% 10%, cover;
+  background-repeat: no-repeat, repeat-x;
+} */
+
+#header {
+  position: relative;
+  height: 12%;
+}
+
+#fondo1 {
+  width: 100%;
+  height: 100%;
+}
+
+#principal {
+  background: url(/images/fondo_div.png);
+  background-size: 100% cover;
+  background-repeat: repeat-x;
+  position: relative;
+  height: 100%;
+}
+
+#blanco {
+  position: absolute;
+  top: 45.5%;
+  left: 50%;
+  border: white solid 3px;
+  height: 90%;
+  width: 60%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+#css {
+  position: absolute;
+  top: 2%;
+  color: white;
+  font-size: 50px;
+  left: 20px;
+}
+
+#curso {
+  position: absolute;
+  color: red;
+  top: 9.3%;
+  left: 13%;
+}
