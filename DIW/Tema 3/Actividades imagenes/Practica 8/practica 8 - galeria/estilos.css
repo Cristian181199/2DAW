@@ -2,13 +2,22 @@
 
 body {
 	font-size: 62.5%;
+	background: url(/imagenes/unnamed.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #contenido {
 	margin-left: 15px;
 	margin-top: 15px;
-	border: 1px dashed #999;
-	border-right: none;
 	border-bottom: none;
+	text-align: center;
+}
+
+#galeria {
+	text-align: center;
+	border-right: none;
+	border-left: none;
+	padding-top: 200px;
 }
 
 #galeria .figura p {
@@ -22,9 +31,23 @@ body {
 h1 {
 	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
 	margin: 0;
-	border-bottom: 1px dashed #999;
 	padding: 5px 0 5px 8px;
 	color: #14556b;
+	font-weight: bold;
+	font-size: 50px;
+	text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  	text-align: center;
 }
 p {
 	font: 1.1em Georgia, "Times New Roman", Times, serif;
@@ -34,9 +57,11 @@ p {
 .figura {
 	margin: 5px;
 	border: 1px solid #ccc;
-	float: left;
 	width: 200px;
+	display: block;
+	display: inline-block;
 }
+
 
 .figura:hover {
 	border: 1px solid #777;
