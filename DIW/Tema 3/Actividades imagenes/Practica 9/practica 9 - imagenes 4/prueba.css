@@ -1,0 +1,5 @@
+#pergaminos {
+    background: url(/images/perg-sup.jpg), url(/images/perg_medio.jpg), url(/images/perg_inf.jpg);
+    background-repeat: no-repeat;
+    height: 2000px;
+}
