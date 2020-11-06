@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Diccionario</title>
+</head>
+<body>
+    <h1>Mini Diccionario con Switch</h1>
+
+        <script>
+        var salir = false;
+        while (!salir) {
+            input = prompt('Introduce un valor de la lista (casa, mesa, perro, gato)\n\nPara salir escribe → salir').toLowerCase();
+            switch (input) {
+                case 'casa':
+                    alert('house');
+                    break;
+                case 'perro':
+                    alert('dog');
+                    break;
+                case 'mesa':
+                    alert('table');
+                    break;
+                case 'gato':
+                    alert('cat');
+                    break;
+                case 'salir':
+                    salir = true;
+                    break;
+                default:
+                    alert('No es un valor correcto');
+            }
+        }
+        </script>
+</body>
+</html>
