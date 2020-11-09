@@ -2,22 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corrector</title>
+    <title>Corrector con ternario</title>
 </head>
 <body>
     <body>
         <h1>Mostrar nota según valor Introducido</h1>
 
         <script>
-            // Pide introducir la nota y la almacena
             var nota = Number(prompt("Introduce la nota del examen"));
 
-            // Comprueba la nota introducida
-            nota >= 5 ? (
-                alert ("Has aprobado");
-            ) : (
-                alert ("Has suspendido");
-            );
+            nota >= 5 ? alert ("Has aprobado") : alert ("Has suspendido")
         </script>
 </body>
 </html>
