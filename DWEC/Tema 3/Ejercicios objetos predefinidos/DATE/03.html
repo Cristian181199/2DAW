@@ -1,0 +1,29 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Edad en Años, Meses y Días</title>
+        <meta name="author" content="Raúl Caro Pastorino" />
+    </head>
+
+    <body>
+        <h1 id="titulo1">Edad en Años, Meses y Días</h1>
+        <div class="resultado">
+            Muestra los meses, días y años que tienes, haciendo uso de los métodos vistos en clase.
+        </div>
+
+        <script>
+            var hoy = new Date();
+            var nacimiento = new Date('1999, 11, 18');
+            var edad = (hoy.getFullYear() - nacimiento.getFullYear());
+            var meses = hoy.getMonth() - nacimiento.getMonth();
+            var dias = nacimiento.getDate() - hoy.getDate();
+
+            // Comprobar si meses es anterior al actual para restar 1 al año
+            if (meses < 0 || (meses === 0 && hoy.getDate() < nacimiento.getDate())) {
+                edad--;
+            }
+
+            document.write(edad + " años, " + meses + " meses, " + dias + " días.");
+        </script>
+    </body>
+</html>
