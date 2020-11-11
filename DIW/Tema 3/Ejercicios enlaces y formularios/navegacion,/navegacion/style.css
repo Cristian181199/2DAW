@@ -18,3 +18,23 @@ body {
 	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
 	padding: 20px;
 }
+
+#barra {
+    width: max-content;
+}
+#barra li {
+    border: 1px dashed gray;
+    list-style: none;
+    height: 20px;
+    text-transform: uppercase;
+}
+a {
+    color: black;
+    text-decoration: none;
+    background: url(./images/fondolink.png) no-repeat 0 100%;
+      background-size: 20px 20px;
+    padding-left: 20px;
+}
+a:hover {
+    background-color: aqua;
+}

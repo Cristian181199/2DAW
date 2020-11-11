@@ -331,3 +331,48 @@ table {
 	margin-bottom: 50px;
 	font-size: 0.85em;
 }
+
+#subForm {
+	text-align: center;
+  }
+  #nombre {
+	background-color: #fbef99;
+	width: 300px;
+  }
+  #email {
+	background-color: #fbef99;
+	width: 300px;
+  }
+  #comentarios {
+	background-color: #fbef99;
+	width: 310px;
+  }
+  #subForm > p:nth-child(1) {
+	margin-left: 140px;
+	font-weight: bold;
+  }
+  #subForm > p:nth-child(2) {
+	margin-left: 60px;
+	font-weight: bold;
+  }
+  #subForm > p:nth-child(3) {
+	  margin-left: 160px;
+	  font-weight: bold;
+  }
+  #subForm > p:nth-child(3) label {
+	  font-weight: lighter;
+  }
+  #subForm > p:nth-child(4) {
+	margin-right: 195px;
+	font-weight: bold;
+  }
+  #subForm > p:nth-child(5) {
+	margin-left: 5px;
+	font-weight: bold;
+  }
+  #subForm > p:nth-child(6) {
+	text-align: center;
+  }
+  #suscribe {
+	background-color: #d6ecae;
+  }
