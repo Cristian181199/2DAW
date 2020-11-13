@@ -8,7 +8,7 @@
     <body>
         <h1 id="titulo1">Edad en Años, Meses y Días</h1>
         <div class="resultado">
-            Muestra los meses, días y años que tienes, haciendo uso de los métodos vistos en clase.
+            Muestra los meses, días y años que tienes, haciendo uso de los métodos que existen y generados de forma dinámica de forma que se adapte al día actual.
         </div>
 
         <script>
@@ -16,7 +16,7 @@
             var nacimiento = new Date('1999, 11, 18');
             var edad = (hoy.getFullYear() - nacimiento.getFullYear());
             var meses = hoy.getMonth() - nacimiento.getMonth();
-            var dias = nacimiento.getDate() - hoy.getDate();
+            var dias = hoy.getDate() - nacimiento.getDate();
 
             // Comprobar si meses es anterior al actual para restar 1 al año
             if (meses < 0 || (meses === 0 && hoy.getDate() < nacimiento.getDate())) {
