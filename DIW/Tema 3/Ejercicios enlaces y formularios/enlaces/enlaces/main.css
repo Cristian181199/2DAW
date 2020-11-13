@@ -143,11 +143,11 @@ a[href*="mailto"] {
 	text-decoration: underline firebrick;
   }
 
-a:visited {
+.subrayado:visited {
 	color: #999999;
 	text-decoration: none;
 }
-a:hover {
+.subrayado:hover {
 	background-color: #999999;
 	color: white;
 }
@@ -156,4 +156,10 @@ a:hover {
 	color: dodgerblue;
 	font-weight: bold;
 	text-decoration: underline firebrick;
+}
+
+.derecha {
+	color: #207EBF;
+	text-decoration: none;
+	font-weight: bold;
 }
