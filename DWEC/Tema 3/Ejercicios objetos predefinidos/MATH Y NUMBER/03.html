@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de un círculo y triangulo</title>
+</head>
+<body>
+    <h1>Calcula el área de un círculo. El usuario debe indicar el valor del radio y debes mostrar por
+        pantalla el siguiente mensaje bien formateado “El área de un círculo es XX.XX cm2”. Calcula
+        también el área del triángulo.</h1>
+        <script>
+
+            radiocirculo = prompt('Introduce el área del circulo: ')
+
+            function formulas() {
+  
+                /* Área de un círculo */
+                this.areaCirculo = function (radio) {
+                    return Math.PI * Math.pow(radio,radiocirculo);
+                }
+
+            }
+            var f = new formulas();
+
+            document.write("El área de un círculo de radio " + radiocirculo + " es " + Math.round((f.areaCirculo(2) + Number.EPSILON) * 100) / 100 + ' cm2' + '<br>');
+
+            // Esto es un triángulo.
+            var ladoA = prompt('Introduce el lado A del triangulo: ');
+            var ladoB = prompt('Introduce el lado B del triangulo: ');
+            var ladoC = prompt('Introduce el lado C del triangulo: ');
+
+            function getArea( a, b, c ) {
+                // Devuelve el área de un triángulo usando la fórmula de Herón.
+                var semiperimetro =   (a + b + c) / 2;
+                var valor         =   semiperimetro * (semiperimetro - a) * (semiperimetro - b) * (semiperimetro - c);
+                return Math.sqrt( valor );
+            }
+
+            document.write('El área del triangulo de lado A,ByC = ' + ladoA + ',' + ladoB + 'y' + ladoC + ' es: ' + Math.round((getArea( ladoA, ladoB, ladoC ) + Number.EPSILON) * 100) / 100 + ' cm2');
+
+
+        </script>
+</body>
+</html>

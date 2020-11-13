@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi formateado a 4 decimales</title>
+</head>
+
+<body>
+    <h1>Muestra el valor de la constante Pi formateado a 4 decimales.</h1>
+
+    <script>
+        function redondeo(x) {
+            return Number.parseFloat(x).toFixed(4);
+        }
+
+        document.write(redondeo(Math.PI));
+    </script>
+
+</body>
+
+</html>
