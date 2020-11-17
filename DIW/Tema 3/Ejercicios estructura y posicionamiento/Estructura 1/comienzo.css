@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #FFFFFF;
+	overflow-y:hidden;
 }
 
 p,h1,h2,h3,h4,h5,h5,ol,ul {
@@ -123,7 +124,6 @@ p,h1,h2,h3,h4,h5,h5,ol,ul {
 /*********************/
 h1 {
 	color: #294E56;
-	margin-top: 10px;
 	font-size: 2.4em;
 	border-top: 4px solid #294E56;
 	line-height: 100%;
@@ -146,7 +146,7 @@ p {
 	/* color: #666666; */
 	font-size: 1.6em;
 }
-h2 {
+#principal h2 {
 	color: #F4BE04;
 	font-size: 1.9em;
 	margin-top: 10px;
@@ -160,7 +160,7 @@ h2 {
 /* PIE */
 /*********************/
 #footer {
-	margin-top: 15px;
+	margin-top: 490px;
 	border-top: 1px dashed #666666;
 	padding: 5px 0 0 5px;
 	margin-right: 200px;
@@ -170,16 +170,62 @@ h2 {
 /*      CRISTIAN     */
 /*********************/
 
-main {
-	float: left;
-	margin: 0 1.5%;
-	width: 63%;
+html {
+	height: 100%;
 }
+
+main {
+	margin-top: 10px;
+	float: left;
+	width: 1466px;
+}
+
 aside {
 	float: right;
-	margin: 0 1.5%;
 	width: 20%;
 	background-color: #294E56;
 	color: #FFFFFF;
+	height: 874px;
+	padding-top: 10px;
 }
-  
+
+aside h2 {
+	color: #FFFFFF;
+	background-color: #73AFB7;
+	padding-left: 5px;
+}
+
+aside a {
+	color: #FFFFFF;
+	font-size: 16px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+aside p {
+	color: #FFFFFF;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+#anuncios {
+	width: 277px;
+	float: left;
+}
+
+#noticias h4 {
+	color: black;
+}
+
+#principal {
+	float: right;
+	width: 1149px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#imagen {
+	float: right;
+	margin: 5px 10px 2px 15px;
+	border: 2px solid #000000;
+}
