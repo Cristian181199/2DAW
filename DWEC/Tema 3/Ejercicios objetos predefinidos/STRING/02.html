@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadena de texto 5 veces</title>
+</head>
+
+<body>
+    <h1>Pide al usuario una cadena de texto 5 veces. Haz estadísticas sobre la frecuencia de
+        aparición de cada letra. Muestra por pantalla dichas ocurrencias.</h1>
+    <input type="text" id="texto">
+    <button type="button" id="boton" onclick="contar()">Verificar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        /* var frase1 = prompt('Introduce la frase 1: ');
+        var frase2 = prompt('Introduce la frase 2: ');
+        var frase3 = prompt('Introduce la frase 3: ');
+        var frase4 = prompt('Introduce la frase 4: ');
+        var frase5 = prompt('Introduce la frase 5: '); */
+
+        function contar() {
+            // Capturas el valor del input, lo limpas de espacios al inicio y al final y luego haces un arreglo
+            const texto = document.getElementById('texto').
+            value.trim().toLowerCase().split('');
+
+            // Creamos un objeto que será el que almacene las repeticiones
+            const repeticiones = {};
+
+            // Ciclamos el texto del input y verificamos si existe y sumamos 1, de no existir siempre valdrá 1
+            texto.forEach((letra) => {
+                repeticiones[letra] = (repeticiones[letra] || 0) + 1;
+            });
+
+            // Ahora ciclamos el objeto y lo agregamos al resultado
+            for (let letra in repeticiones) {
+                const text = `${ letra } = ${ repeticiones[ letra ] }<br>`;
+                document.getElementById('resultado').innerHTML += text;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

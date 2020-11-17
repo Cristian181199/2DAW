@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenar cada palabra en un array y mostrar los siguientes datos</title>
+</head>
+
+<body>
+    <h1>Solicitar una frase desde teclado, almacenar cada palabra en un array y mostrar los
+        siguientes datos: <br>
+        - La primera palabra de la frase. <br>
+        - La última palabra de la frase. <br>
+        - El número de palabras de la frase.
+    </h1>
+
+    <script>
+        var frase = prompt('Introduce una frase: ');
+        var espacio = " ";
+
+        function dividirCadena(cadenaADividir, separador) {
+            var arrayDeCadenas = cadenaADividir.split(separador);
+            document.write('<p>La cadena original es: "' + cadenaADividir + '"');
+            document.write('<br>El separador es: "' + separador + '"');
+            document.write('<br>La primera palabra de la frase es: "' + arrayDeCadenas[0] + '"');
+            document.write("<br>El array tiene " + arrayDeCadenas.length + " elementos: ");
+
+            for (var i = 0; i < arrayDeCadenas.length; i++) {
+                document.write(arrayDeCadenas[i] + " / ");
+            }
+        }
+
+        dividirCadena(frase, espacio)
+    </script>
+
+</body>
+
+</html>
