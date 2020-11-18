@@ -1,0 +1,65 @@
+/* Quitar margenes */
+body {
+    margin:0;
+    padding:0
+  }
+
+/* LOGO */
+#logo img{
+    width: 400px;
+    height: 200px;
+}
+
+#logo {
+    float: left;
+}
+
+/* Cabecera */
+#cabecera h1 {
+    font-size: 50px;
+}
+
+#cabecera {
+    text-align: center;
+}
+
+/* Menu Cabecera */
+#menucabecera {
+    border-top: dotted;
+    border-bottom: dotted;
+}
+
+#menucabecera li{
+    display: inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* Noticias */
+#noticias {
+    float: left;
+    width: 200px;
+}
+
+/* nav */
+#nav {
+    float: right;
+    width: 100px;
+}
+
+/* Principal */
+#principal {
+    width: 200px;
+    float: right;
+}
+
+/* footer */
+#legal {
+    margin-top: 500px;
+}
