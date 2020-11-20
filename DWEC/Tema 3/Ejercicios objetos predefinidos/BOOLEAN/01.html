@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea 5 objetos Boolean</title>
+</head>
+
+<body>
+    <h1>17.Crea 5 objetos Boolean con un valor inicial falso y otros 5 con valor inicial verdadero. </h1>
+
+    <script>
+        // Objetos BOOLEAN false
+        var bNoParam = new Boolean();
+        var bZero = new Boolean(0);
+        var bNull = new Boolean(null);
+        var bEmptyString = new Boolean('');
+        var bfalse = new Boolean(false);
+        document.write('<p> Objetos BOOLEAN false: <br>' + bNoParam + '<br>' + bZero + '<br>' + bNull + '<br>' + bEmptyString + '<br>' + bfalse + '<br>' + ' </p>')
+
+        // Objetos BOOLEAN true
+        var btrue = new Boolean(true);
+        var btrueString = new Boolean('true');
+        var bfalseString = new Boolean('false');
+        var bSuLin = new Boolean('Su Lin');
+        var bArrayProto = new Boolean([]);
+        document.write('<p> Objetos BOOLEAN true: <br>' + btrue + '<br>' + btrueString + '<br>' + bfalseString + '<br>' + bSuLin + '<br>' + bArrayProto + '<br>' + ' </p>')
+
+    </script>
+</body>
+
+</html>

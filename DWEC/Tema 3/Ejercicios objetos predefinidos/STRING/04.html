@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formada por mayusculas/minusculas o combinacion</title>
+</head>
+
+<body>
+    <h1>Pide al usuario que introduzca una cadena y determinar si esa cadena está formada sólo por
+        letras mayúsculas, sólo por minúsculas o por una mezcla de ambas.</h1>
+    <script>
+        var frase = prompt('Introduce una cadena: ');
+
+        /**
+         * checkType
+         * Comprueba si el texto dado {words} esta formado
+         * unicamente por número, espacios y letras minisucalas, mayusculas o ambas
+         * respectivamente.
+         * retorna 0 - solo minusuclas
+         *         1 - solo mayusculas
+         *         2 - Combinación de mayusculas y minusuclas
+         *         -1 - Si no cumple con ninguna de las anteriores.
+         */
+        function checkType(words) {
+            words = String(words).trim();
+            const regxs = {
+                "lower": /^[a-z0-9 ]+$/,
+                "upper": /^[A-Z0-9 ]+$/,
+                "upperLower": /^[A-Za-z0-9 ]+$/
+            }
+
+            if (regxs.lower.test(words)) return '0';
+            if (regxs.upper.test(words)) return '1';
+            if (regxs.upperLower.test(words)) return '2';
+            return -1;
+        }
+
+        if (checkType(frase) == '0') document.write('<h3>La cadena que has escrito: ' + frase + ' está en minusculas</h3>');
+        if (checkType(frase) == '1') document.write('<h3>La cadena que has escrito: ' + frase + ' está en MAYUSCULAS</h3>');
+        if (checkType(frase) == '2') document.write('<h3>La cadena que has escrito: ' + frase + ' es una combinación entre minusculas y MAYUSCULAS</h3>');
+    </script>
+</body>
+
+</html>
