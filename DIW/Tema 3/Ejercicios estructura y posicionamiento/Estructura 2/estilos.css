@@ -21,12 +21,14 @@ body {
 
 #cabecera {
     text-align: center;
+    overflow: hidden;
 }
 
 /* Menu Cabecera */
 #menucabecera {
     border-top: dotted;
     border-bottom: dotted;
+    height: 25px;
 }
 
 #menucabecera li{
@@ -49,19 +51,30 @@ main {
  margin-left: 30px;
 }
 
+#noticias h2 {
+    margin: 10px;
+}
+
 #noticias a {
     text-decoration: none;
     color: black;
+    display: block;
+    margin: 10px 10px 10px 10px;
 }
 
 #noticias span {
     text-transform: uppercase;
+    display: block;
 }
 
 /* nav */
 #nav {
     float: right;
     width: 400px;
+}
+
+#principalNav {
+    margin-left: 50px;
 }
 
 /* Principal */
@@ -76,5 +89,5 @@ main {
 
 /* footer */
 #legal {
-    margin-top: 500px;
+    border-top: dotted;
 }
