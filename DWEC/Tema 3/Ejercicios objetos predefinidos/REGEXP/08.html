@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar las palabras que terminen en 's'</title>
+</head>
+
+<body>
+    <h1>25. Buscar las palabras que terminen en 's' dentro de una cadena.</h1>
+
+    <script>
+        var comprobar = /\w*s\b/mi;
+        while (true) {
+            var frase = prompt("Introduce una frase:");
+            document.write("<p>La palabra que termina en s de tu frase es: " + comprobar.exec(frase) + "</p>");
+            var but = Number(prompt("Introduce enter si quieres salir sino un número distinto a 0"));
+            if (but == 0) {
+                break;
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

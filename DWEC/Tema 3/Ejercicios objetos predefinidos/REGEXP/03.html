@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula moderna</title>
+</head>
+
+<body>
+    <h1>20. Valida una matrícula moderna</h1>
+
+    <script>
+        var comprobar = /\d{4}\s([B-D]|[F-H]|[J-N]|[P-T]|[V-Z]){3}$/g;
+        var sw = true;
+
+        while (sw) {
+            var matricula = prompt('Introduce una matricula moderna (Recuerda el formato: "XXXX DDD", donde X son numeros y D consonantes)');
+            if (comprobar.test(matricula)) {
+                document.write("<p>La matricula introducida es válida: " + matricula + "</p>");
+                sw = false;
+            } else {
+                alert('No coincide el formato de la matricula')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
