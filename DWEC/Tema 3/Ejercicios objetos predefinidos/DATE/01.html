@@ -1,26 +1,29 @@
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Calcular Milisegundos hasta fin de Año</title>
-        <meta name="author" content="Raúl Caro Pastorino" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <h1 id="titulo1">Calcular Milisegundos hasta fin de Año</h1>
-        <div class="resultado">
-            Calcula el tiempo restante en milisegundos entre la fecha actual y la fecha de fin de año.
-            <br />
-            Recarga la página para actualizar el cálculo.
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Milisegundos hasta fin de Año</title>
+</head>
 
-        <script>
-            var hoy = (new Date()).getTime();
-            document.writeln("<br />Hoy → " + hoy);
-            var fin_anio = (new Date('12/31/2017')).getTime();
-            document.writeln("<br />Fin de año → " + fin_anio);
+<body>
+    <h1 id="titulo1">Calcular Milisegundos hasta fin de Año</h1>
+    <div class="resultado">
+        Calcula el tiempo restante en milisegundos entre la fecha actual y la fecha de fin de año.
+        <br />
+        Recarga la página para actualizar el cálculo.
+    </div>
 
-            document.writeln("<br />Diferencia en milisegundos → " + (fin_anio - hoy));
-            document.writeln("<br />Tiempo restante restantes → " + (fin_anio - hoy).getDate());
-        </script>
-    </body>
+    <script>
+        var hoy = (new Date()).getTime();
+        document.writeln("<br />Hoy → " + hoy);
+        var fin_anio = (new Date('12/31/2017')).getTime();
+        document.writeln("<br />Fin de año → " + fin_anio);
+
+        document.writeln("<br />Diferencia en milisegundos → " + (fin_anio - hoy));
+        document.writeln("<br />Tiempo restante restantes → " + (fin_anio - hoy).getDate());
+    </script>
+</body>
+
 </html>
