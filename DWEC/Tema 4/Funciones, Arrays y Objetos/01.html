@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambios de base</title>
+</head>
+
+<body>
+    <h1>Crea un script que permita cambiar de base.</h1>
+
+    <h2>Pasar Decimal a otras bases:</h2>
+
+    <script>
+        function prueba() {
+            var base10 = document.getElementById('base10').value;
+            var base = document.getElementById('base').value;
+            var resultado = base10.toString('base');
+            document.getElementById('resultado').value = resultado;
+        }
+    </script>
+
+    <div>
+        <form action="#">
+            <label for="">Introduzca un numero base 10</label>
+            <input type="number" name="" id="base10"> <br>
+            <label for="">Introduzca una base entre 2 y 36</label>
+            <input type="number" name="" id="base"> <br>
+            <input type="button" onclick="prueba();" value="Convertir">
+            <input type="text" name="" id="resultado">
+        </form>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <h2>Pasar de otras bases a Decimal</h2>
+
+    <script>
+        function prueba2() {
+            var baseX = document.getElementById('baseX').value;
+            var base2 = document.getElementById('base2').value;
+            var resultado2 = parseInt(baseX, base2);
+            console.log(resultado2);
+            document.getElementById('resultado2').value = resultado2;
+        }
+    </script>
+
+    <div>
+        <form action="#">
+            <label for="">Introduzca un numero: </label>
+            <input type="number" name="" id="baseX"> <br>
+            <label for="">Introduzca la base en la que se encuentra: </label>
+            <input type="number" name="" id="base2"> <br>
+            <input type="button" onclick="prueba2();" value="Convertir">
+            <input type="text" name="" id="resultado2">
+        </form>
+    </div>
+
+</body>
+
+</html>
