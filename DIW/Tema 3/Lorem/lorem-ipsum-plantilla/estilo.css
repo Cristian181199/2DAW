@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbeba3;
+}
+
+#principal {
+    margin: auto;
+    background-color: #fbeba3;
+    width: 80%;
+
+}
+
+#cabecera {
+    background-color: #9cacfa;
+    text-align: center;
+}
+
+#arriba {
+    background-color: #9cacfa;
+}
+
+#abajo {
+    background-color: #9cacfa;
+}
+
+footer {
+    background-color: #9cacfa;
+}
