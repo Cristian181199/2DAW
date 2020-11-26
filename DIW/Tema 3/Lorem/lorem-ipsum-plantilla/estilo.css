@@ -14,6 +14,38 @@ body {
 #cabecera {
     background-color: #9cacfa;
     text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.color-titulo {
+    color: #fbeba3;
+    margin-top: 0;
+}
+
+.subrayado {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px;
+}
+
+span {
+    background-color: #fbeba3;
+}
+
+.espaciado {
+    padding-left: 2%;
+}
+
+#imagen {
+    float: right;
+    border: 5px solid white;
+}
+
+#imagenreal {
+    border: 5px solid blue;
 }
 
 #arriba {
@@ -22,6 +54,24 @@ body {
 
 #abajo {
     background-color: #9cacfa;
+}
+
+#quartz {
+    text-align: center;
+}
+
+#fox {
+    display: block;
+    border: 0;
+    height: 50px;
+    background-image: url(./129428-fox-face.svg);
+}
+
+.hrazul {
+    display: block;
+    background-color: blue;
+    height: 10px;
+    border: 0;
 }
 
 footer {
