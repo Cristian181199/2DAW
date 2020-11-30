@@ -46,7 +46,7 @@
         function mensajeAlarma() {
             var parar = confirm(
                 'RIIIIIIIIIIIIN!!!!!!!!!!!\nSoy una alarma\nSi el sueño apreta, puedes cancelar y dormir 2 minutos más'
-                );
+            );
             if (!parar) {
                 desactivarAlarma()
                 temporizador = setTimeout(mensajeAlarma, (2000 * 60)); //Repite a los 2m
