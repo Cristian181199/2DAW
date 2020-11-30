@@ -57,7 +57,7 @@ Tramites de empresas SL o SA por ser las mas frecuentes:
 ### <span style="background-color: #CDFFFD;">B) Tramites generales para todas las empresas</span>
 
 
-#### <span style="color:red;font-size:2em;">Hacienda</span>
+#### <span style="color:red;">Hacienda</span>
 
 #### Alta de I.A.E
 
@@ -69,7 +69,7 @@ Tramites de empresas SL o SA por ser las mas frecuentes:
 - Tramite en **hacienda** para darse de **alta** en unos **impuestos concretos**.
 - Para empresarios **individuales** tendra que darse de alta en el **IRPF**, para **sociedades** sera en el **impuesto de sociedades**, ademas se dara de alta tambien del **IVA** (*segun actividad*).
 
-#### <span style="color:red;font-size:2em;">Ayuntamiento</span>
+#### <span style="color:red;">Ayuntamiento</span>
 
 #### Licencia de actividad
 
@@ -84,31 +84,166 @@ Tramites de empresas SL o SA por ser las mas frecuentes:
 
 - Para **modificar el local** debera adjuntarse el **presupuesto de las obras** y **planos del local**, asi como el **visado** en caso de hacer obras que afecten la **estructura** del local.
 
-#### <span style="color:red;font-size:2em;">Seguridad Social</span>
+#### <span style="color:red;">Seguridad Social</span>
 
 #### Inscripcion de la empresa en la seguridad social
 
-- Toda emrpesa que realice contrataciones de trabajadores debera inscribirse en esta, para pagar la cuota de la empresa asi como la seguridad social de los trabajadores.
+- Toda emrpesa que **realice contrataciones** de trabajadores debera **inscribirse** en esta, para pagar la **cuota de la empresa** asi como la **seguridad social** de los trabajadores.
 
 #### Alta en el regimen de autonomos
 
-- Tanto empresarios individuales como administradores de SL / SA y profesionales deben estar dados de alta en el regimen de autonomos.
+- Tanto **empresarios individuales** como *administradores de SL / SA* y **profesionales** deben estar dados de alta en el **regimen de autonomos**.
 
 #### Alta en el regimen general
 
-- Todos los trabajadores contratados deben darse de alta en la seguridad social antes del inicio de su actividad, sino en asi habra que afiliar al trabajador.
+- **Todos** los trabajadores contratados deben **darse de alta** en **la seguridad social** antes del inicio de su actividad, sino en asi habra que **afiliar** al trabajador.
 
 #### Comunicacion de apertura
 
-- Es obligatorio comunicar la apertura de la empresa a la consejeria de empleo o trabajo de su comunidad autonoma.
+- Es **obligatorio** comunicar la **apertura** de la empresa a la **consejeria de empleo** o **trabajo** de su comunidad autonoma.
 
-#### <span style="color:red;font-size:2em;">Registro mercantil</span>
+#### <span style="color:red;">Registro mercantil</span>
 
 #### Registro mercantil
 
 Se registraran los libros obligatorios que son:
 
-- Libro de actas donde constan los acuerdos de las juntas de socio.
-- Libro de registro de socios en la SL.
-- Libro de registro de acciones nominativas en las SA.
-- Documentacion contable: Libro diario, inventarios y cuentas anuales.
+- Libro de **actas** donde constan los acuerdos de las juntas de socio.
+- Libro de **registro de socios** en la SL.
+- Libro de **registro de acciones nominativas** en las SA.
+- Documentacion contable: **Libro diario**, **inventarios** y **cuentas anuales**.
+
+## Unidad 2
+
+### 1. El mercado
+
+El mercado  tiene varios significados:
+
+- Es el lugar donde acudimos a comprar un producto.
+- Son los consumidores que nos compran un producto o que nos pueden llegar a comprar en el futuro.
+
+En definitiva podemos entenderlo como los **consumidores reales y potenciales** de un **producto**.
+
+### <span style="background-color: #CDFFFD;">A) Tamaño, cuota y estructura del mercado</span>
+
+Tamaño de mercado:
+
+- Es la **cantidad total vendida** de un producto en un **sitio** *(geografico)* concreto y durante un **tiempo** concreto.
+
+Cuotas de mercado:
+
+- **Cantidad de ventas** de un producto **por una empresa** respecto al total de ventas.
+
+***Cuota = ventas empresa / ventas del sector***
+
+Agentes que intervienen en la estructura de un mercado:
+
+#### Fabricantes de bienes y empresas de servicios
+
+- No es lo mismo un mercado donde **solo hay una empresa** ejerciendo de **monopolio**, que uno en el que hay **varias empresas** con el **mismo producto**.
+
+#### Intermediarios o canal de distribucion
+
+- **Cadena de intermediarios**: fabricante-mayorista-minorista-consumidor.
+- **Venta directa**: fabricante-consumidor.
+
+#### Prescriptores
+
+- Son aquellos que **influyen en la decision de comprar** el producto, no vende ni fabrica, solo **influye en que se compre**.
+
+#### Consumidores
+
+- Es el **demandante del producto**.
+
+### <span style="background-color: #CDFFFD;">B) Equilibrio de mercado</span>
+
+Un mercado esta en equilibrio cuando la **oferta es igual a la demanda**.
+Si el precio es **demasiado barato**, habra **mas demanda que oferta**.
+Si el precio es **demasiado caro** habra **mas oferta que demanda**.
+
+### 2. Tipos de mercado
+
+#### Monopolio
+
+- Solo **existe una empresa**, de modo que **todos tienen que comprarle a esta**.
+- La empresa que actua en **monopolio** establece **las condiciones que cree oportuna**.
+
+#### Oligopolio
+
+- Hay **pocas empresas** que ofrezcan ese bien en el mercado.
+- Suele pasar en sectores que requieren **grandes cantidades de inversion** y no pueden entrar pequeñas empresas.
+- **Oligopolio con pacto**: Las empresas **pactan precios y condiciones** en lugar de competir *(gasolineras)*.
+- **Oligopolio sin pacto**: Las empresas **compiten con precios y ofertas** entre ellas *(Telefonia movil)*.
+
+#### Competencia perfecta
+
+- **Muchas empresas** que ofrecen el **mismo producto**.
+- La **agricultura y alimentos basicos** vienen bajo este modelo y el **precio viene dado por el mercado**.
+- Los **consumidores** valoran mas aspectos **a parte del precio**: **atencion al cliente**, **cercania de la tienda**...
+  
+#### Competencia monopolistica
+
+- **Muchas empresas que ofercen el producto**, pero buscan **distinguir su producto** de los demas por la **calidad y marca**.
+- Al ser percibido como **producto unico**, la empresa tiene mas **margen** para **subir el precio**.
+
+### 3. La segmentacion del mercado
+
+Para que nuestro proyecto **sea viable**, hemos de **especializarnos** y **centrarnos** en algunos **clientes** y **productos**.
+Lo que nos va a permitir realizar lo anterior es la **segmentacion del mercado**.
+
+Segmentar el mercado:
+
+- Significa **dividir el mercado** de clientes **en grupos o tipos de clientes** que tienen **algo en comun**.
+- Cada **segmento** es cada **grupo que comparten caracteristicas**.
+
+### <span style="background-color: #CDFFFD;">A) Como segmentar el mercado</span>
+
+Tenemos que pensar que clientes van a **necesitar/comprar** el producto.
+Son los que ya **nos compra** el producto o **potenciales clientes**.
+
+| | Algunos criterios para segmentar un mercado de clientes |
+|---|---|
+| Geograficos  | Provincia, localidad, zona, paises, etc.  |
+| Demograficos  | Sexo, edad, estado civil, nacionalidad, etc.  |
+| Economicos  | Renta alta, media, baja, o renta media-baja, etc.  |
+| Profesion  | Los que tengan una determinada profesion o no la tengan.  |
+| Psicologicos  | Rasgos de presonalidad: Va a la moda, es tradicional, innovador, etc.  |
+| Gustos  | Para cada producto hay unos gustos de consumo distintos.  |
+| Empresa  | No es empresa, es un autonomo, empresa pequeña, grande, etc.  |
+
+### 4. Estudio del mercado: los clientes
+
+Hay que realizar un estudio de mercado para no fracasar, hay que **conocer** como son los **clientes**, la **competencia**, **productos sustitutivos**, **proveedores**, etc.
+
+Estudio de mercado:
+
+- Cliente objetivo.
+- Competencia.
+- Proveedores.
+- Productos sustitutivos.
+
+### <span style="background-color: #CDFFFD;">A) Analisis de nuestro cliente objetivo o "target"</span>
+
+¿Que necesito saber de mis clientes objetivos?
+
+- Datos **basicos**
+  - Sexo, edad, estado civil, nacionalidad, lugar donde vive, etc.
+- Datos **economicos**
+  - Nivel de renta, precio que esta dispuesto a pagar, etc.
+- **Gustos y preferencias**
+  - ¿Que le gusta del producto?, ¿Como preferiria que fuese el producto?
+- **Habitos de compras**
+  - ¿**Quien compra**? A veces el comprador no es el mismo que el conmsumidor *(regalos)*
+  - ¿**Donde compra**? En que tipo de tiendas suele comprar.
+  - ¿**Cuando lo compra**? Todos los dias, una vez a la semana, mes, etc.
+  - ¿**Cuanto compra**? Grandes cantidades de una vez o muchas veces en pocas cantidades.
+- **¿Por que lo compra**
+  - Por el precio.
+  - Por la seguridad que le da la marca.
+  - Por habitos.
+  - Por experiencias anteriores.
+  - Por seguir modas.
+  - Por imitar a otras personas.
+  - Porque les gusta cambiar e innovar.
+  - Porque lo compro de forma impulsiva sin pensarlo.
+  - Por sus valores y convicciones personales.
