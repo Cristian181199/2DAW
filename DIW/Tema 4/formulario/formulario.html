@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        :root {
+            background-color: violet;
+        }
+
+        .red-pink::selection {
+            background: red;
+            color: pink;
+        }
+
+        input[type="text"]:disabled {
+            background: #dddddd;
+        }
+
+        p::selection {
+            background-color: black;
+        }
+
+        input:checked+label {
+            color: aquamarine;
+        }
+
+        input[type="radio"]:checked {
+            box-shadow: 0 0 0 3px red;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: 0 0 0 3px mediumvioletred;
+        }
+
+        option:checked {
+            box-shadow: 0 0 0 3px white;
+            color: palegreen;
+        }
+    </style>
+
+<body>
+    <h1 class="red-pink">Prueba</h1>
+    <form action="" method="get">
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+        <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>Contento? <br>
+            Si <input type="checkbox" name="" id="checkbox">
+            No <input type="checkbox" name="" id="checkbox">
+        </p>
+        <p> Nivel de contento
+            <select name="select">
+                <option value="Value 1">0-5</option>
+                <option value="Value 2" selected>5-8</option>
+                <option value="Value 3">9-10</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+</body>
+
+</html>
