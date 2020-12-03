@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vector de 10 elementos</title>
 </head>
+
 <body>
-    
+    <h1>
+        4. Crear un vector de 10 elementos con valores aleatorios comprendidos entre 0 y 1000. Buscar
+        el menor y el mayor. Generar otro vector a partir de él que deje fuera dichos valores.
+    </h1>
+
+    <script>
+        var vec = [];
+        var f;
+        for (f = 0; f < 10; f++) {
+            vec[f] = parseInt(Math.random() * 1001);
+        }
+        document.write('Vector original<br>');
+        for (f = 0; f < vec.length; f++) {
+            document.write(vec[f] + '-');
+        }
+        document.write('<br>');
+        var menor = vec[0];
+        var pos = 0;
+        for (f = 1; f < vec.length; f++) {
+            if (vec[f] < menor) {
+                menor = vec[f];
+                pos = f;
+            }
+        }
+        document.write('Elemento menor del vector:' + menor);
+        document.write('<br>');
+        var mayor = vec[0];
+        var pos2 = 0;
+        for (f = 1; f < vec.length; f++) {
+            if (vec[f] > mayor) {
+                mayor = vec[f];
+                pos2 = f;
+            }
+        }
+        document.write('Elemento mayor del vector:' + mayor);
+        document.write('<br>');
+        var pos3 = pos + 1;
+        var pos4 = pos2 - 1;
+        var vec2 = vec.slice(pos3, pos4);
+        document.write('Vector resultante de la llamada a slice<br>');
+        for (f = 0; f < vec2.length; f++) {
+            document.write(vec2[f] + '-');
+        }
+    </script>
 </body>
+
 </html>
