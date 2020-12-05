@@ -5,6 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impares del 1 al 21</title>
+    <script>
+        var array = [];
+
+        for (let i = 1; i <= 21; i++) {
+            if (i % 2 != 0) {
+                array.push(i);
+            }
+        }
+
+        function metodoA() {
+            document.write("<p>Tu array es [" + array + "]</p>");
+            var sum = array.reduce((a, b) => a + b, 0);
+            document.write("<p>El sumatorio de todos los elementos es: " + sum + "</p>");
+        }
+
+        function metodoB() {
+            document.write("<p>Tu array es [" + array + "]</p>");
+            document.write("<p>Tu nuevo array es [" + array.reverse() + "]</p>");
+        }
+
+        function metodoC() {
+            document.write("<p>Tu array es [" + array + "]</p>");
+            var valor = Number(prompt("Introduce un número:"));
+            var posicion = array.indexOf(valor);
+            if (posicion != -1) {
+                document.write("<p>Tu valor está en la posicion " + posicion + "</p>");
+            } else {
+                alert("Tu valor no está en el array");
+            }
+        }
+
+        function metodoD() {
+            document.write("<p>Tu array es [" + array + "]</p>");
+            var valor = Number(prompt("Introduce un número:"));
+            var posicion = array.indexOf(valor);
+            if (posicion != -1) {
+                delete array[posicion];
+                document.write("<p>Tu nuevo array es [" + array + "]</p>");
+            } else {
+                alert("Tu valor no está en el array");
+            }
+        }
+
+        function metodoE() {
+            document.write("<p>Tu array es [" + array + "]</p>");
+            var asc = array.sort((a, b) => a - b);
+            document.write("<p>Tu array ordenado ascendente es [" + asc + "]</p>");
+            var desc = array.sort((a, b) => b - a);
+            document.write("<p>Tu array ordenado descendente es [" + desc + "]</p>");
+        }
+    </script>
 </head>
 
 <body>
@@ -18,20 +69,14 @@
         e. Muéstrelo ordenado de forma ascendente, y a continuación de forma descendente.
     </h1>
 
-    <p id="demo"></p>
-    <script>
-        var impar = [];
-        var impar2 = [];
-        var i;
-        for (i = 1; i < 22; i = i + 2) {
-            impar2 += i;
-            impar += i + "-";
-        }
-        document.getElementById("demo").innerHTML = impar;
-        document.write(impar2);
+    <h3>Elige que apartado quieres lanzar:</h3>
 
+    <input type="button" value="A" onclick="metodoA();">
+    <input type="button" value="B" onclick="metodoB();">
+    <input type="button" value="C" onclick="metodoC();">
+    <input type="button" value="D" onclick="metodoD();">
+    <input type="button" value="E" onclick="metodoE();">
 
-    </script>
 </body>
 
 </html>
