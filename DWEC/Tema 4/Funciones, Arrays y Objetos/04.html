@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vector de 10 elementos</title>
     <script>
-        function iniciar() {
+        function generar() {
             var array = [];
             var array2 = [];
 
-            document.write("<h4>Mi array es:</h4>")
+            document.write("<h4>Array principal:</h4>");
             for (let i = 0; i < 10; i++) {
                 array[i] = (Math.random() * 1000).toFixed();
                 document.write("<p>" + array[i] + "</p>");
             }
 
-            document.write("<h4>Mi nuevo array es:</h4>");
+            document.write("<h4>Nuevo array:</h4>");
             for (let j = 0; j < 10; j++) {
                 while (true) {
                     var num = (Math.random() * 1000).toFixed();
@@ -37,7 +37,7 @@
         el menor y el mayor. Generar otro vector a partir de él que deje fuera dichos valores.
     </h1>
 
-    <input type="button" value="Empezar" onclick="iniciar();" />
+    <input type="button" value="Generar" onclick="generar();" />
 
 </body>
 

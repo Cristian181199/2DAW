@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generar tabla</title>
     <script>
-        function iniciar() {
+        function generar() {
             function Vehiculo(marca, modelo, color, anyo) {
                 this.marca = marca;
                 this.modelo = modelo;
@@ -18,15 +18,15 @@
             var vehiculo2 = new Vehiculo("BMW", "Z4", "Blanco", 2010);
             var vehiculo3 = new Vehiculo("Seat", "Toledo", "Azul", 1999);
             var vehiculo4 = new Vehiculo("Fiat", "500", "Verde", 1995);
-            var arrayVehiculos = [vehiculo1, vehiculo2, vehiculo3, vehiculo4];
+            var arraydeVehiculos = [vehiculo1, vehiculo2, vehiculo3, vehiculo4];
 
             document.write(
-                "<table border='1' align='center'><thead><th>MARCA</th><th>MODELO</th><th>COLOR</th><th>AÑO FABRICACIÓN</th></thead><tbody>"
-                );
-            for (i = 0; i < arrayVehiculos.length; i++) {
-                document.write("<tr><td>" + arrayVehiculos[i].marca + "</td><td>" +
-                    arrayVehiculos[i].modelo + "</td><td>" + arrayVehiculos[i].color +
-                    "</td><td>" + arrayVehiculos[i].anyo + "</td></tr>");
+                "<table border='2' align='center' text-align='center'><thead><th>MARCA</th><th>MODELO</th><th>COLOR</th><th>AÑO FABRICACIÓN</th></thead><tbody>"
+            );
+            for (j = 0; j < arraydeVehiculos.length; j++) {
+                document.write("<tr><td>" + arraydeVehiculos[j].marca + "</td><td>" +
+                    arraydeVehiculos[j].modelo + "</td><td>" + arraydeVehiculos[j].color +
+                    "</td><td>" + arraydeVehiculos[j].anyo + "</td></tr>");
             }
             document.write("</tbody></table>");
         }
@@ -41,7 +41,7 @@
         objeto debeocupar una línea y el valor de cadapropiedad debe ocupar una celda de dicha línea.
     </h1>
 
-    <input type="button" value="Genera una tabla" onclick="iniciar()">
+    <input type="button" value="Genera la tabla" onclick="generar()">
 
 </body>
 

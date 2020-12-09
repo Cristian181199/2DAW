@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generar() {
+            var array = Array.of(1, 2.3, 3, 4, 5);
+            document.write("<p>El array es: [" + array + "]</p>");
+
+            var prueba = array.filter((x) => Number.isInteger(x) && x > 0);
+            if (prueba.length == array.length) {
+                document.write("<p>El array contiene números no positivos</p>");
+            } else {
+                document.write("<p>El array contiene números positivos</p>");
+            }
+
+            var triple = array.map((x) => (x ** 3).toFixed());
+            document.write("<p>El array elevado a tres es [" + triple + "]</p>");
+
+            var multi = array.reduce((a, b) => a * b);
+            document.write("<p>El resultado de multiplicar todo el array es: " + multi + "</p>");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        11. Usando los nuevos métodos de los arrays: <br>
+        •Crea un vector con 5 valores numéricos.<br>
+        •Comprueba si son todos enteros positivos.<br>
+        •Devuelve en un nuevo array el triple sus valores.<br>
+        •Calcula el resultado de multiplicar todos los valores del nuevo array.
+    </h1>
+    <input type="button" value="Generar" onclick="generar();">
+</body>
+
+</html>

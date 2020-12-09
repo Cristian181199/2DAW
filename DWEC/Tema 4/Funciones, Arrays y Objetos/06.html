@@ -8,52 +8,52 @@
     <script>
         var array = [];
 
-        for (let i = 1; i <= 21; i++) {
-            if (i % 2 != 0) {
-                array.push(i);
+        for (let j = 1; j <= 21; j++) {
+            if (j % 2 != 0) {
+                array.push(j);
             }
         }
 
         function metodoA() {
-            document.write("<p>Tu array es [" + array + "]</p>");
+            document.write("<p>Tu array es: [" + array + "]</p>");
             var sum = array.reduce((a, b) => a + b, 0);
-            document.write("<p>El sumatorio de todos los elementos es: " + sum + "</p>");
+            document.write("<p>El total de todos los numeros es: " + sum + "</p>");
         }
 
         function metodoB() {
-            document.write("<p>Tu array es [" + array + "]</p>");
-            document.write("<p>Tu nuevo array es [" + array.reverse() + "]</p>");
+            document.write("<p>Tu array es: [" + array + "]</p>");
+            document.write("<p>Tu nuevo array es: [" + array.reverse() + "]</p>");
         }
 
         function metodoC() {
-            document.write("<p>Tu array es [" + array + "]</p>");
+            document.write("<p>Tu array es: [" + array + "]</p>");
             var valor = Number(prompt("Introduce un número:"));
             var posicion = array.indexOf(valor);
             if (posicion != -1) {
-                document.write("<p>Tu valor está en la posicion " + posicion + "</p>");
+                document.write("<p>Tu valor está en la posicion: " + posicion + "</p>");
             } else {
-                alert("Tu valor no está en el array");
+                alert("Tu valor no está dentro del array");
             }
         }
 
         function metodoD() {
-            document.write("<p>Tu array es [" + array + "]</p>");
+            document.write("<p>Tu array es: [" + array + "]</p>");
             var valor = Number(prompt("Introduce un número:"));
             var posicion = array.indexOf(valor);
             if (posicion != -1) {
                 delete array[posicion];
-                document.write("<p>Tu nuevo array es [" + array + "]</p>");
+                document.write("<p>Tu nuevo array es: [" + array + "]</p>");
             } else {
-                alert("Tu valor no está en el array");
+                alert("Tu valor no está dentro del array");
             }
         }
 
         function metodoE() {
-            document.write("<p>Tu array es [" + array + "]</p>");
+            document.write("<p>Tu array es: [" + array + "]</p>");
             var asc = array.sort((a, b) => a - b);
-            document.write("<p>Tu array ordenado ascendente es [" + asc + "]</p>");
+            document.write("<p>El array ordenado ascendente es: [" + asc + "]</p>");
             var desc = array.sort((a, b) => b - a);
-            document.write("<p>Tu array ordenado descendente es [" + desc + "]</p>");
+            document.write("<p>El array ordenado descendente es: [" + desc + "]</p>");
         }
     </script>
 </head>
@@ -69,7 +69,7 @@
         e. Muéstrelo ordenado de forma ascendente, y a continuación de forma descendente.
     </h1>
 
-    <h3>Elige que apartado quieres lanzar:</h3>
+    <h2>Haz click en la letra que quieras probar:</h2>
 
     <input type="button" value="A" onclick="metodoA();">
     <input type="button" value="B" onclick="metodoB();">

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos métodos de los arrays</title>
+    <script>
+        function generar() {
+            var array = new Array(10);
+            for (let j = 0; j < array.length; j++) {
+                array[j] = (Math.random() * 10).toFixed();
+            }
+            document.write("<p>El array es: [" + array + "]</p>");
+            document.write("<p>El array con valores menores a 8 es: [" + array.filter((x) => x < 8) + "]</p>");
+
+            for (const j in array) {
+                if (array[j] % 2 != 0) {
+                    array[j] = "impar"
+                }
+            }
+            document.write("<p>El nuevo array es: [" + array + "]</p>");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        10.Usando los nuevos métodos de los arrays:<br>
+        •Crea un array de diez números aleatorios entre 0 y 10.<br>
+        •Devuelve un array con los valores menores a 8.<br>
+        •Intercambia los valores impares por la cadena “impar”.
+    </h1>
+    <input type="button" value="Generar" onclick="generar();">
+</body>
+
+</html>

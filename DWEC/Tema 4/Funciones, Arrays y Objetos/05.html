@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 5</title>
+    <title>Vector de 10 elementos cambiado</title>
     <script>
-        function iniciar() {
+        function generar() {
             function arrayCopia(array) {
                 array.pop();
                 array.shift();
 
-                document.write("<h4>Mi nuevo array es:</h4>")
+                document.write("<h4>Nuevo array:</h4>");
                 for (let i = 0; i < array.length; i++) {
                     document.write("<p>" + array[i] + "</p>");
                 }
@@ -19,7 +19,7 @@
 
             var array = [];
 
-            document.write("<h4>Mi array es:</h4>")
+            document.write("<h4>Array principal:</h4>");
             for (let i = 0; i < 10; i++) {
                 array[i] = (Math.random() * 1000).toFixed();
                 document.write("<p>" + array[i] + "</p>");
@@ -36,7 +36,7 @@
         de generar un nuevo vector a partir de los valores de otro, dejando fuera el primer
         y último, pase a ser un método del objeto Array
     </h1>
-    <input type="button" value="Generar" onclick="iniciar();">
+    <input type="button" value="Generar" onclick="generar();">
 </body>
 
 </html>
