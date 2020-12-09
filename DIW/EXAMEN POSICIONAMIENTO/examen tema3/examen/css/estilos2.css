@@ -1,0 +1,111 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: mifuente;
+    src: url(../css/NerkoOne-Regular.ttf);
+}
+
+header {
+    background-image: url(../imagenes/balones.png);
+    background-repeat: repeat-x;
+    text-align: center;
+    border-bottom: dotted 1px black;
+}
+
+header a {
+    width: 20%;
+}
+
+header h1 {
+    font-size: 4em;
+    color: gray;
+    text-shadow: 2px 2px 3px black;
+    position: relative;
+    bottom: 80px;
+    padding-left: 15%;
+}
+
+#barra {
+    list-style-image: url(../imagenes/balon.png);
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+
+}
+
+
+#barra a,
+aside a {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+#barra a:hover,
+aside a:hover {
+    /*fondo color #ff0; */
+    background-color: #ff0;
+}
+
+#barra li {
+    display: inline-flex;
+    background: url(../imagenes/balon.png) no-repeat 0 100%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px / 20px 20px 20px 20px;
+    margin: 10px 10px 10px 40px;
+    width: 15%;
+    height: 25px;
+    background-size: 1.3em;
+    background-position: left;
+    border: 1px black solid;
+}
+
+section aside li {
+    background: url(../imagenes/balon.png) no-repeat 0 100%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px / 20px 20px 20px 20px;
+    margin: 10px 10px 10px 40px;
+    width: 250px;
+    height: 25px;
+    background-size: 1.3em;
+    background-position: left;
+    border: 1px black solid;
+
+}
+
+aside {
+    margin-top: 2%;
+}
+
+aside a {}
+
+
+
+
+
+
+footer {
+    /* color de fondo #999 */
+    background-color: #999;
+}
+
+footer address {
+    text-align: left;
+    font-style: italic;
+
+}
+
+footer address::first-line {
+    font-weight: bold;
+}
+
+footer small {
+    text-align: right;
+    font-style: italic;
+}
+
+footer small p {}

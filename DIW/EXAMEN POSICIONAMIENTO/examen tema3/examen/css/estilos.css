@@ -1,0 +1,188 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: mifuente;
+    src: url(../css/NerkoOne-Regular.ttf);
+}
+
+header {
+    background-image: url(../imagenes/balones.png);
+    background-repeat: repeat-x;
+    text-align: center;
+    border-bottom: dotted 1px black;
+}
+
+header a {
+    width: 20%;
+}
+
+header h1 {
+    font-size: 4em;
+    color: gray;
+    text-shadow: 2px 2px 3px black;
+    position: relative;
+    bottom: 80px;
+    padding-left: 15%;
+}
+
+#barra {
+    list-style-image: url(../imagenes/balon.png);
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+
+}
+
+
+#barra a,
+aside a {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+#barra a:hover,
+aside a:hover {
+    /*fondo color #ff0; */
+    background-color: #ff0;
+}
+
+#barra li {
+    display: inline-flex;
+    background: url(../imagenes/balon.png) no-repeat 0 100%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px / 20px 20px 20px 20px;
+    margin: 10px 10px 10px 40px;
+    width: 15%;
+    height: 25px;
+    background-size: 1.3em;
+    background-position: left;
+    border: 1px black solid;
+}
+
+section .title {
+    height: 70px;
+    background-color: gray;
+    text-align: center;
+    font-size: 3em;
+    border-top: dotted 1px black;
+    font-weight: 900;
+}
+
+#principal {
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.jugador {
+    display: inline-table;
+    height: 100px;
+    width: 100px;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+section h3 {}
+
+.jugador img {
+    height: 250px;
+    border: 1em solid gray;
+    margin-top: 5%;
+}
+
+.jugador p {
+    margin-top: 5%;
+}
+
+section aside li {
+    background: url(../imagenes/balon.png) no-repeat 0 100%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px / 20px 20px 20px 20px;
+    margin: 10px 10px 10px 40px;
+    width: 250px;
+    height: 25px;
+    background-size: 1.3em;
+    background-position: left;
+    border: 1px black solid;
+
+}
+
+aside {
+    float: right;
+    margin-top: 2%;
+}
+
+aside a {
+    margin-bottom: 5%;
+}
+
+#secundario img {
+    float: left;
+    clear: left;
+}
+
+#secundario article p {
+}
+
+#secundario h3 {
+    border-bottom: dotted 1px black;
+}
+
+footer {
+    /* color de fondo #999 */
+    background-color: #999;
+}
+
+footer address {
+    text-align: left;
+    font-style: italic;
+
+}
+
+footer address::first-line {
+    font-weight: bold;
+}
+
+footer small {
+    text-align: right;
+    font-style: italic;
+}
+
+footer small p {}
+
+
+.fuente {
+    height: 70px;
+    text-align: center;
+    background-color: aqua;
+    font-size: 2em;
+    font-family: mifuente;
+}
+
+.lider {
+    background-color: gold !important;
+    font-family: mifuente;
+}
+
+
+/* La parte del formulario la haceis desde 0 
+	las cajas de texto:
+En reposo color: #ff0;
+al pasar por lo alto: #0ff;
+Si dejamos el foco: #888;
+*/
+
+#cambiante:hover {
+    box-sizing: border-box;
+    display: block;
+    width: 350px;
+    height: 425px;
+    padding-left: 350px;
+    background: url(../imagenes/oliver2.jpg);
+}
