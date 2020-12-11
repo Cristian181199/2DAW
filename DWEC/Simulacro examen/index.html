@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro examen</title>
+    <script src="cookie.js"></script>
+    <script>
+        function botones() {
+            var padre = document.getElementById("contenedorUno");
+            var hijo = document.getElementById('login');
+            padre.removeChild(hijo);
+
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.innerText = 'LogOut';
+            button.id = 'logout';
+            button.setAttribute("onclick", "volver();");
+            document.getElementById("contenedorUno").appendChild(button);
+
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.innerText = 'Guardar Datos';
+            button.id = 'guardar';
+            button.setAttribute("onclick", "guardar();");
+            document.getElementById("contenedorUno").appendChild(button);
+
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.innerText = 'Modo Administrador';
+            button.id = 'modoadmin';
+            button.setAttribute("onclick", "modoadmin();");
+            document.getElementById("contenedorUno").appendChild(button);
+
+            contenedorDos.innerHTML = ""; //Borrar En Datos usuario
+            var formulario = document.createElement("form");
+            formulario.id = formulario;
+            contenedorDos.appendChild(formulario);
+            var label = document.createElement("label");
+            label.for = 'usuario';
+            label.innerText = 'Usuario: ';
+            formulario.appendChild(label);
+            var input = document.createElement("input");
+            input.type = 'text';
+            input.name = 'usuario';
+            input.id = 'usuario';
+            label.appendChild(input);
+            var salto = document.createElement("br");
+            label.appendChild(salto);
+            var label = document.createElement("label");
+            label.for = 'email';
+            label.innerText = 'Email: ';
+            formulario.appendChild(label);
+            var input = document.createElement("input");
+            input.type = 'email';
+            input.name = 'email';
+            input.id = 'email';
+            label.appendChild(input);
+
+
+
+        }
+
+        function volver() {
+            window.location.href = "index.html"
+            deleteCookie("nombre");
+            deleteCookie("email");
+            deleteCookie("dni");
+            deleteCookie("rango");
+
+        }
+    </script>
+</head>
+
+<body onload="iniciar()">
+    <div id="principal">
+
+        <fieldset>
+            <div id="contenedorUno">
+                <button id="login" onclick="botones()"> login</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos usuario</legend>
+            <div id="contenedorDos">Bienvenido a esta web!
+                <br>Pulsa login para entrar como usuario registrado</div>
+        </fieldset>
+    </div>
+</body>
+
+</html>

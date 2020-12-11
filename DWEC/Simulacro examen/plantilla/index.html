@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pruena Examen Bloque 1</title>
+    <script src="cookie.js"></script>
+    <script>
+        function loguin() {
+            var contenedor = document.getElementById("contenedorUno");
+            var button = contenedor.firstChild;
+            contenedor.removeChild(button);
+
+            contenedor.appendChild(button);
+            var logout = contenedor.firstChild;
+            logout.setAttribute("id", "logout");
+            logout.setAttribute("onclick", "volver();");
+            logout.innerHTML = "LogOut";
+
+            button = document.createElement("button");
+            contenedor.appendChild(button);
+            var guardar = document.getElementsByTagName("button")[1];
+            guardar.setAttribute("id", "guardar");
+            guardar.setAttribute("onclick", "guardar();");
+            guardar.innerHTML = "Guardar Datos";
+
+            button = document.createElement("button");
+            contenedor.appendChild(button);
+            var admin = document.getElementsByTagName("button")[2];
+            admin.setAttribute("id", "admin");
+            admin.setAttribute("onclick", "administrador();");
+            admin.innerHTML = "Modo Administrador";
+
+            var form = document.createElement(form);
+
+        }
+
+        function volver() {
+            window.location.href = "index.html"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="principal">
+
+        <fieldset>
+            <div id="contenedorUno">
+                <button id="login" onclick="loguin()"> login</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos usuario</legend>
+            <div id="contenedorDos">Bienvenido a esta web!
+                <br>Pulsa login para entrar como usuario registrado</div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
