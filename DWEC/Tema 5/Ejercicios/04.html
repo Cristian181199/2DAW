@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsar un botón del ratón</title>
+    <script>
+        window.onload = function () {
+            document.addEventListener('click', raton);
+            document.addEventListener('keydown', teclado);
+            document.addEventListener('mousemove', volver);
+        };
+
+        function raton(amarillo) {
+            var evento = amarillo || window.event;
+            document.body.style.backgroundColor = "#FFFF00";
+        }
+
+        function teclado(azul) {
+            var evento = azul || window.event;
+            document.body.style.backgroundColor = "#CCE6FF";
+        }
+
+        function volver(blanco) {
+            var evento = blanco || window.event;
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        4. Realizar un script que, al pulsar un botón del ratón, el color de fondo del cuadro de mensaje
+        debe ser amarillo (#FFFF00) y cuando se pulsa una tecla, el color de fondo debe ser azul
+        (#CCE6FF). Al volver a mover el ratón, el color de fondo vuelve a ser blanco.
+    </h1>
+    <h2>¡¡PRUEBA!!</h2>
+    <p>
+        Si das clik el color del fondo se volverá amarillo. <br>
+        Si pulsas una tecla se volverá azul. <br>
+        Si mueves el raton volverá a ser el fondo blanco.
+    </p>
+</body>
+
+</html>

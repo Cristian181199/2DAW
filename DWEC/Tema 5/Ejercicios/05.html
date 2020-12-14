@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion imagen</title>
+    <script>
+        window.onload = function () {
+            document.addEventListener('mousedown', cambiar);
+            document.addEventListener('mouseup', volver);
+        };
+
+        function cambiar(otraimagen) {
+            var evento = otraimagen || window.event;
+            document.getElementById("div").style.background = "url(./vida.jpg) no-repeat center";
+        }
+
+        function volver(normal) {
+            var evento = normal || window.event;
+            document.getElementById("div").style.background = "url(./feliz.jpg) no-repeat center";
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #div {
+            background: url(./feliz.jpg) no-repeat center;
+            width: 650px;
+            height: 650px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        5. Coloque en la aplicación una imagen, y que se cambie por otra imagen, y ésta se mantenga
+        mientras el usuario está pulsando algún botón del ratón, cuando suelte debe volver la primera
+        imagen.
+    </h1>
+    <h2>
+        Al mantener cualquier boton del raton pulsado, cambiara laimagen por otra, al dejarlod e pulsar,
+        volvera a la imagen que estaba antes.
+    </h2>
+
+    <div id="div"></div>
+</body>
+
+</html>

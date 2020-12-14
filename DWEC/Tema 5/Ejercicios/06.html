@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar mensaje</title>
+    <script>
+        window.onload = function () {
+            window.alert("Se ha cargado correctamente.")
+            document.getElementById("div").innerHTML =
+                "La página se ha cargado correctamente como has podido comprobar.";
+            document.getElementById("bienvenida").innerHTML = "Bienvenido a la pagina"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        6. Realizar un script que al terminarse de cargar, muestre un mensaje indicando que la página se ha
+        cargado correctamente y dando la bienvenida.
+    </h1>
+
+    <div id="div"></div>
+    <h3 id="bienvenida"></h3>
+</body>
+
+</html>

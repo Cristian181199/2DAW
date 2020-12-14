@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error imagen</title>
+    <script>
+        window.onload = function () {
+            var imagen = new Image();
+            imagen.src = "./vida.jpg";
+            imagen.onload = function () {
+                contenedor = document.getElementById("contenedor");
+                contenedor.appendChild(imagen);
+                alert("Imagen cargada");
+
+            }
+            imagen.onerror = function () {
+                alert("Error en imagen");
+            }
+            imagen.onabort = function () {
+                alert("Imagen abortada");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        7. Realiza una aplicación que tenga una imagen, y que muestre un mensaje indicando si la imagen
+        no se ha cargado correctamente, ya sea por un error o porque el usuario lo haya detenido.
+    </h1>
+
+    <h2>¡¡IMPORTANTE!!</h2>
+    <p>
+        En este caso, salta una alerta diciendo que la imagen carga bien, si se quiere comprobar que hay
+        error, habria que cambiar el codigo o abortar.
+    </p>
+
+    <div id="contenedor"></div>
+
+</body>
+
+</html>
