@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        12. Valida el siguiente formulario. Valide también que no puedan dejarse en blanco. Validar el
+        formulario ayudándote de los atributos de html5. La validación se debe realizar poco a poco
+        según el usuario vaya rellenando los campos. En caso de introducir un valor incorrecto,
+        limpiar el campo.
+    </h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Ingresa los datos</legend>
+            <label for="">DNI: </label>
+            <input class="blanco" type="text" name="dni" pattern="^[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[a-zA-Z]$" required
+                title="Debe poner 8 numeros y una letra" placeholder="(Formato 99.999.999-X)">
+            <br>
+            <br>
+            <label for="">Nombre: </label>
+            <input type="text" name="nombre" maxlength="100" pattern="^[a-zA-Z]+[ ][a-zA-Z]+([ ][a-zA-Z]+){0,2}$"
+                required title="Al menos 1 nombre y 1 apellido. Máx 2 nombres y 2 apellidos"
+                placeholder="Minimo 1 nombre y 1 apellido"> <br>
+            <br>
+            <label for="">F.Nac: </label>
+            <input class="blanco" type="date" name="nacimiento" required> <br>
+            <br>
+            <label for="">E-mail: </label>
+            <input class="blanco" type="email" name="email" required title="El formato debe ser xxx@yyy.zzz"
+                placeholder="example@gmail.com"> <br>
+            <br>
+            <label for="">Pag. Web: </label>
+            <input class="blanco" type="url" name="web" pattern="https://www.xxxx.yyy*" required
+                title="El formato debe ser https://.*" placeholder="https://example.com"> <br>
+            <br>
+            <label for="">Contrasena: </label>
+            <input class="blanco" type="password" name="contrasena" minlength="8" maxlength="10" pattern="^.{8,10}$"
+                required placeholder="Longitud entre 8 y 10"> <br>
+            <br>
+            <label for="">Confirmar contrasena: </label>
+            <input class="blanco" type="password" name="confirmar" minlength="8" maxlength="10" pattern="^.{8,10}$"
+                required placeholder="Longitud entre 8 y 10">
+        </fieldset>
+        <button id="guardar">COMPROBAR</button>
+        <input type="reset">
+    </form>
+</body>
+
+</html>
