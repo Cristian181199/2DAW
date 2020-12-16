@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen Bloque 1 Modelo 1</title>
+    <script src="./js/cookie.js" defer></script>
+    <script>
+        function modoAdministrador() {
+            var contenedor = document.getElementById("contenedorDos");
+            var botonAdmin = document.getElementById("entrarAdmin");
+            var botonEntrar = document.getElementById("entrarCliente");
+
+            botonEntrar.disabled = true; // Desabilitar boton entrar
+            botonAdmin.disabled = true; // Desabilitar boton admin
+
+            var form = document.createElement("form");
+            form.name = "formulario";
+            contenedor.appendChild(form);
+
+            var label = document.createElement("label");
+            form.appendChild(label);
+            label.innerHTML = "Nombre: ";
+            var input = document.createElement("input");
+            form.appendChild(input);
+            input.type = "text";
+            input.name = "nombre";
+            var salto = document.createElement("br");
+            form.appendChild(salto);
+
+            var label2 = document.createElement("label");
+            form.appendChild(label2);
+            label2.innerHTML = "Precio: ";
+            var input2 = document.createElement("input");
+            form.appendChild(input2);
+            input2.type = "money";
+            input2.name = "precio";
+            var salto2 = document.createElement("br");
+            form.appendChild(salto2);
+
+            var label3 = document.createElement("label");
+            form.appendChild(label3);
+            label3.innerHTML = "Stock: ";
+            var input3 = document.createElement("input");
+            form.appendChild(input3);
+            input3.type = "number";
+            input3.name = "stock";
+            var salto3 = document.createElement("br");
+            form.appendChild(salto3);
+
+
+            var botonAñadir = document.createElement("button");
+            form.appendChild(botonAñadir);
+            botonAñadir.innerHTML = "Añadir";
+            botonAñadir.type = "submit";
+
+
+            var botonVolver = document.createElement("button");
+            form.appendChild(botonVolver);
+            botonVolver.innerHTML = "Volver";
+            botonVolver.id = "volver";
+            botonVolver.className = "prueba";
+
+            botonAñadir.disabled = true;
+
+
+        }
+
+        function validacion() {
+            if (document.formulario.nombre.value.length == 0 && document.formulario.precio.value.length == 0 && document
+                .formulario.stock.value.length == 0) {
+                alert("Tiene que escribir el nombre, precio y stock")
+                document.formulario.nombre.focus()
+                return 0;
+            } else {
+                botonAdmin.disabled = false;
+            }
+
+        }
+
+        function entrar() {
+            var botonEntrar = document.getElementById("entrarCliente");
+            var botonAdmin = document.getElementById("entrarAdmin");
+
+            botonAdmin.disabled = true; // Desabilitar boton admin
+            botonEntrar.disabled = true; // Desabilitar boton entrar
+
+        }
+
+        function GeneraTabla() {
+            var contenedor = document.getElementById("contenedorDos");
+
+            var tabla = document.createElement("table");
+            tabla.className = "prueba";
+
+            var tblHead = document.createElement("thead");
+            var tblBody = document.createElement("tbody");
+
+            var nombre = document.createElement("th");
+            nombre.innerHTML = "NOMBRE";
+
+            var precio = document.createElement("th");
+            precio.innerHTML = "PRECIO";
+
+            var stock = document.createElement("th");
+            stock.innerHTML = "STOCK";
+
+            var seleccion = document.createElement("th");
+            seleccion.innerHTML = "SELECCIÓN";
+
+            var botonComprar = document.createElement("button");
+            botonComprar.innerHTML = "Comprar";
+            botonComprar.className = "prueba";
+
+
+            var botonVolver = document.createElement("button");
+            botonVolver.innerHTML = "Volver";
+            botonVolver.id = "volver2";
+            botonVolver.onclick = "volver()";
+
+
+
+            contenedor.appendChild(tabla);
+            tabla.appendChild(tblHead);
+            tblHead.appendChild(nombre);
+            tblHead.appendChild(precio);
+            tblHead.appendChild(stock);
+            tblHead.appendChild(seleccion);
+            contenedor.appendChild(botonComprar);
+            contenedor.appendChild(botonVolver);
+            botonComprar.disabled = true;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>DoñanaMarket</legend>
+            <p>Bienvenido/a a esta web!</p>
+            <div id="contenedorUno">Entra en nuestra tienda
+                <button id="entrarCliente" onclick="entrar();GeneraTabla();">Entrar</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <br>
+
+    <div>
+        <fieldset>
+            <legend>DoñanaMarket</legend>
+            <div id="contenedorDos"></div>
+        </fieldset>
+    </div>
+
+    <br>
+
+    <div id="contenedorTres">
+        <button id="entrarAdmin" onclick="modoAdministrador();">Administrador</button>
+    </div>
+</body>
+
+</html>
