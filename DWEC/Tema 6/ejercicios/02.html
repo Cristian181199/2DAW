@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ejercicio13() {
+            // Declaracion del Objeto.
+            function Vehiculo(marca, modelo, color, año) {
+                this.marca = marca;
+                this.modelo = modelo;
+                this.color = color;
+                this.año = año;
+            }
+            var Vehiculo1 = new Vehiculo("Ferrari", "Scaglietti", "Rojo", 2010);
+            var Vehiculo2 = new Vehiculo("VMW", "Z4", "Blanco", 2010);
+            var Vehiculo3 = new Vehiculo("Seat", "Toledo", "Azul", 1999);
+            var Vehiculo4 = new Vehiculo("Fiat", "500", "Verde", 1995);
+            var Vehiculos = [Vehiculo1, Vehiculo2, Vehiculo3, Vehiculo4];
+
+
+            console.log(Vehiculos.length);
+            console.log(Vehiculos);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Modifica los ejercicios 13 de la unidad 4 de manera que la generación de las tablas y la selección de los
+        elementos se realice mediante métodos del DOM vistos en este tema.
+    </h1>
+
+    <div id="13">
+        <button id="Tabla13" onclick="ejercicio13();">Ejercicio 13</button>
+    </div>
+</body>
+
+</html>

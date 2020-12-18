@@ -4,18 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 9 y 13 remasterizados</title>
+    <title>Ejercicio 9 remasterizado</title>
     <script>
-        var array = [
-            ['Cristian', 10],
-            ['Marta', 3],
-            ['Jesus', 8],
-            ['Rosa', 6],
-            ['Adrian', 0]
-        ];
+        var nombres = [];
+        var cont = '';
+        var x;
+        var notas = [];
 
-        console.log(array.length);
-        console.log(array);
+        for (i = 0; i <= 4; i++) {
+            x = prompt("Ingresa tu nombre:", "");
+            nombres.push(x);
+        }
+
+        for (i = 0; i <= 2; i++) {
+            cont += nombres[i] + " ";
+        }
+
+        var m = 0;
+        for (j = 0; j <= 4; j++) {
+            x = prompt("Ingresa la nota de " + nombres[m] + ":", "");
+            m++;
+            notas.push(x);
+        }
+        for (j = 0; j <= 2; j++) {
+            cont += notas[j] + " ";
+        }
+
+        var array = [nombres, notas];
+
 
 
 
@@ -55,25 +71,17 @@
             // modifica el atributo "border" de la tabla y lo fija a "2";
             tabla.setAttribute("border", "2");
         }
-
-        function ejercicio13() {
-
-        }
     </script>
 </head>
 
 <body>
     <h1>
-        Modifica los ejercicios 9 y 13 de la unidad 4 de manera que la generación de las tablas y la selección de los
+        Modifica los ejercicios 9 de la unidad 4 de manera que la generación de las tablas y la selección de los
         elementos se realice mediante métodos del DOM vistos en este tema.
     </h1>
 
     <div id="9">
         <button id="Tabla9" onclick="ejercicio9();">Ejercicio 9</button>
-    </div>
-    <hr>
-    <div id="13">
-        <button id="Tabla13" onclick="ejercicio13();">Ejercicio 13</button>
     </div>
 </body>
 
