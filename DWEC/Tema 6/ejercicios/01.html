@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 y 13 remasterizados</title>
+    <script>
+        var array = [
+            ['Cristian', 10],
+            ['Marta', 3],
+            ['Jesus', 8],
+            ['Rosa', 6],
+            ['Adrian', 0]
+        ];
+
+        console.log(array.length);
+        console.log(array);
+
+
+
+        function ejercicio9() {
+
+            // Obtener la referencia del elemento div
+            var div1 = document.getElementById("9");
+
+
+            // Crea un elemento <table> y un elemento <tbody>
+            var tabla = document.createElement("table");
+            var tblBody = document.createElement("tbody");
+
+
+            // Crea las celdas
+            for (var i = 0; i < array.length; i++) {
+                // Crea las hileras de la tabla
+                var hilera = document.createElement("tr");
+
+                for (var j = 0; j < array[i].length; j++) {
+                    // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+                    // texto sea el contenido de <td>, ubica el elemento <td> al final
+                    // de la hilera de la tabla
+                    var celda = document.createElement("td");
+                    var textoCelda = document.createTextNode(array[i][j]);
+                    celda.appendChild(textoCelda);
+                    hilera.appendChild(celda);
+
+                }
+                // agrega la hilera al final de la tabla (al final del elemento tblbody)
+                tblBody.appendChild(hilera);
+            }
+            // posiciona el <tbody> debajo del elemento <table>
+            tabla.appendChild(tblBody);
+            // appends <table> into <div>
+            div1.appendChild(tabla);
+            // modifica el atributo "border" de la tabla y lo fija a "2";
+            tabla.setAttribute("border", "2");
+        }
+
+        function ejercicio13() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Modifica los ejercicios 9 y 13 de la unidad 4 de manera que la generación de las tablas y la selección de los
+        elementos se realice mediante métodos del DOM vistos en este tema.
+    </h1>
+
+    <div id="9">
+        <button id="Tabla9" onclick="ejercicio9();">Ejercicio 9</button>
+    </div>
+    <hr>
+    <div id="13">
+        <button id="Tabla13" onclick="ejercicio13();">Ejercicio 13</button>
+    </div>
+</body>
+
+</html>
