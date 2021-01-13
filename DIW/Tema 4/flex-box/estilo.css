@@ -36,9 +36,16 @@
 
 
 #footer {
-    margin-top: 5%
+    background-color: darkslateblue;
+    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #box4 {
-
+    background-color: goldenrod;
+    width: 15%;
+    height: 10%;
 }
