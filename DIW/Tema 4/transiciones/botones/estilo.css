@@ -1,0 +1,52 @@
+
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#primero {
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+}
+
+#segundo{
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+}
+
+#tercero{
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+}
+
+#cuarto{
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+    transition-property: background-color, text-transform, border-radius, transform;
+    transition-duration: 2s, 3s, 2s, 3s;
+}
+#cuarto:hover{
+    background-color: brown;
+    text-transform: uppercase;
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
+#quinto{
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+    transition-property: background-color, color, transform;
+    transition-duration: 2s, 4s, 3s, 3s;
+    transition-delay: 0s, 0s, 0s;
+}
+#quinto:active {
+    background-color: blue;
+    color: red;
+    transform: translateY(70%);
+}
