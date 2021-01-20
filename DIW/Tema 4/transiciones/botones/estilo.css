@@ -1,52 +1,132 @@
+html{
+    width: 100%;
+    height: 100%;
+    transition-property: border-left, border-top, border-bottom, border-right;
+    transition-duration: 5s, 5s, 5s, 5s;
+    transition-delay: 15s, 15s, 15s, 15s;
+}
+html:hover{
+    border-left: 10% solid skyblue;
+    border-right: 10% solid green;
+    border-top: 5% solid orange;
+    border-bottom: 5% solid red;
+}
 
-#principal{
+/* DIV QUE CONTIENE TODOS LOS BOTONES*/
+#principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* PRIMER BOTON*/
 #primero {
     background-color: aquamarine;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
 }
 
-#segundo{
+/* SEGUNDO BOTON*/
+#segundo {
     background-color: aquamarine;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
+    transition-property: transform, border-radius, border-left, border-top, border-bottom;
+    transition-duration: 3s, 2s, 2s, 2s, 2s;
+    transition-delay: 0s, 3s, 3s, 3s, 3s;
 }
 
-#tercero{
-    background-color: aquamarine;
-    width: 100px;
-    height: 50px;
+#segundo:hover{
+    transform: rotate(-30deg);
 }
 
-#cuarto{
-    background-color: aquamarine;
-    width: 100px;
-    height: 50px;
-    transition-property: background-color, text-transform, border-radius, transform;
-    transition-duration: 2s, 3s, 2s, 3s;
+#segundo:active{
+    transform: scale(0.8);
+    border-left: 100px solid orange;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
 }
-#cuarto:hover{
+
+/* TERCERO BOTON*/
+
+#tercero {
+    background-color: aquamarine;
+    width: 150px;
+    height: 100px;
+    transition-property: width, height, background-color, border-radius, color, transform;
+    transition-duration: 3s, 3s, 2s, 3s, 2s, 4s;
+}
+
+#tercero:hover {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+}
+#padretercero {
+    transition-property: transform;
+    transition-delay: 2s;
+    transition-duration: 4s;
+}
+#padretercero:hover {
+    transform: translate(-50%, 50%);
+}
+
+/* CUARTO BOTON*/
+
+#cuarto {
+    background-color: aquamarine;
+    width: 150px;
+    height: 100px;
+    transition-property: background-color, text-transform, border-radius, transform, opacity;
+    transition-duration: 2s, 3s, 2s, 3s, 2s;
+}
+
+#cuarto:hover {
     background-color: brown;
     text-transform: uppercase;
     border-radius: 50%;
     transform: translateY(50%);
+    opacity: 0.5;
 }
 
-#quinto{
+/* QUINTO BOTON*/
+#quinto {
     background-color: aquamarine;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
     transition-property: background-color, color, transform;
-    transition-duration: 2s, 4s, 3s, 3s;
+    transition-duration: 2s, 4s, 3s;
     transition-delay: 0s, 0s, 0s;
 }
+
 #quinto:active {
     background-color: blue;
     color: red;
     transform: translateY(70%);
+}
+
+#padrequinto {
+    transition-property: transform;
+    transition-delay: 3s;
+    transition-duration: 3s;
+
+}
+
+#padrequinto:active {
+    transform: translateX(-50%);
+}
+
+/* INPUT*/
+#inputnumber{
+    transition-property: border;
+    transition-duration: 3s;
+}
+#inputnumber:in-range{
+    border: 5px solid greenyellow;
+}
+#inputnumber:out-of-range{
+    border: 10px solid red;
 }

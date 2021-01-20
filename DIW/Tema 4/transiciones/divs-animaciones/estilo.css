@@ -1,0 +1,61 @@
+#cuadrado {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: skyblue;
+    border: 2px solid black;
+    position: relative;
+    animation-name: ruta;
+    animation-duration: 10s;
+}
+
+@keyframes ruta {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 1000px;
+        top: 0px;
+    }
+
+    37% {
+        background-color: brown;
+        left: 1000px;
+        top: 200px;
+    }
+
+    37.5% {
+        background-color: aquamarine;
+        left: 1200px;
+        top: 200px;
+    }
+
+    43% {
+        background-color: bisque;
+        left: 1200px;
+        top: 500px;
+
+    }
+
+    50% {
+        background-color: blue;
+        left: 1000px;
+        top: 500px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 500px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
