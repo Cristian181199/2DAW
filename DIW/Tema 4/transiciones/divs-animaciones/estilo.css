@@ -28,23 +28,17 @@
         top: 200px;
     }
 
-    37.5% {
+    43% {
         background-color: aquamarine;
         left: 1200px;
         top: 200px;
     }
 
-    43% {
+    50% {
         background-color: bisque;
         left: 1200px;
         top: 500px;
 
-    }
-
-    50% {
-        background-color: blue;
-        left: 1000px;
-        top: 500px;
     }
 
     75% {
@@ -58,4 +52,89 @@
         left: 0px;
         top: 0px;
     }
+}
+
+#cuadrado2{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: yellow;
+    border: 2px solid black;
+    position: relative;
+    animation-name: ruta2;
+    animation-duration: 10s;
+}
+
+@keyframes ruta2 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 50%;
+        top: 0px;
+    }
+
+    30% {
+        transform: rotate(360deg);
+    }
+
+    /*32.5% {
+        transform: translate(25px, 25px);
+    }
+
+    35% {
+        transform: translate(50px, 50px);
+    }
+
+    37.5% {
+        transform: translate(75px, 75px);
+    }*/
+
+    40% {
+        transform: translate(400px, 400px);
+    }
+
+    50%{
+        transform: translate(-200px, 600px);
+    }
+
+    60%{
+        transform: translate(-400px, -400px);
+    }
+
+    /*37% {
+        background-color: brown;
+        left: 1000px;
+        top: 200px;
+    }
+
+    43% {
+        background-color: aquamarine;
+        left: 1200px;
+        top: 200px;
+    }
+
+    50% {
+        background-color: bisque;
+        left: 1200px;
+        top: 500px;
+
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 500px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }*/
 }
