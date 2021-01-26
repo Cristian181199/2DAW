@@ -1,0 +1,386 @@
+#reloj {
+    background: #fff url(./reloj.jpeg) 0 0 no-repeat;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    border-radius: 250px;
+}
+
+/* segundos */
+@keyframes efectos-segundos {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes efectos-segundos {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#reloj .segundos {
+    height: 400px;
+    left: 155px;
+    position: absolute;
+    top: 249px;
+    width: 400px;
+}
+
+#reloj .segundos div {
+    background-color: #860000;
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    width: 190px;
+    animation-name: efectos-segundos;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#reloj #s1 {
+    transform: rotate(-90deg) translatex(130px);
+    animation-delay: 0s;
+    transform: rotate(-90deg) translatex(130px);
+    animation-delay: 0s;
+}
+
+#reloj #s2 {
+    transform: rotate(-84deg) translatex(130px);
+    animation-delay: 1s;
+    transform: rotate(-84deg) translatex(130px);
+    animation-delay: 1s;
+}
+
+#reloj #s3 {
+    transform: rotate(-78deg) translatex(130px);
+    animation-delay: 2s;
+    transform: rotate(-78deg) translatex(130px);
+    animation-delay: 2s;
+}
+#reloj #s4 {
+    transform: rotate(-72deg) translatex(130px);
+    animation-delay: 3s;
+    transform: rotate(-72deg) translatex(130px);
+    animation-delay: 3s;
+}
+#reloj #s5 {
+    transform: rotate(-66deg) translatex(130px);
+    animation-delay: 4s;
+    transform: rotate(-66deg) translatex(130px);
+    animation-delay: 4s;
+}
+#reloj #s6 {
+    transform: rotate(-60deg) translatex(130px);
+    animation-delay: 5s;
+    transform: rotate(-60deg) translatex(130px);
+    animation-delay: 5s;
+}
+#reloj #s7 {
+    transform: rotate(-54deg) translatex(130px);
+    animation-delay: 6s;
+    transform: rotate(-54deg) translatex(130px);
+    animation-delay: 6s;
+}
+#reloj #s8 {
+    transform: rotate(-48deg) translatex(130px);
+    animation-delay: 7s;
+    transform: rotate(-48deg) translatex(130px);
+    animation-delay: 7s;
+}
+#reloj #s9 {
+    transform: rotate(-42deg) translatex(130px);
+    animation-delay: 8s;
+    transform: rotate(-42deg) translatex(130px);
+    animation-delay: 8s;
+}
+#reloj #s10 {
+    transform: rotate(-36deg) translatex(130px);
+    animation-delay: 9s;
+    transform: rotate(-36deg) translatex(130px);
+    animation-delay: 9s;
+}
+#reloj #s11 {
+    transform: rotate(-30deg) translatex(130px);
+    animation-delay: 10s;
+    transform: rotate(-30deg) translatex(130px);
+    animation-delay: 10s;
+}
+#reloj #s12 {
+    transform: rotate(-24deg) translatex(130px);
+    animation-delay: 11s;
+    transform: rotate(-24deg) translatex(130px);
+    animation-delay: 11s;
+}
+/* ... y sigue asi hasta 60, restando en rotate siempre 6 y sumando un segundo al delay */
+ #reloj #s60 {
+    transform: rotate(264deg) translatex(130px);
+    animation-delay: 59s;
+    transform: rotate(264deg) translatex(130px);
+    animation-delay: 59s;
+}
+
+/* minutos */
+@keyframes minutos-efecto {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes minutos-efecto {
+    0% {
+        opacity: 1;
+    }
+
+    1.66% {
+        opacity: 1;
+    }
+
+    1.67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#reloj .minutos {
+    height: 300px;
+    left: 175px;
+    position: absolute;
+    top: 249px;
+    width: 300px;
+}
+
+#reloj .minutos div {
+    background-color: #000086;
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    animation-name: minutos-efecto;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#reloj #m1 {
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 0s;
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 0s;
+}
+
+#reloj #m2 {
+    transform: rotate(-84deg) translatex(110px);
+    animation-delay: 60s;
+    transform: rotate(-84deg) translatex(110px);
+    animation-delay: 60s;
+}
+
+#reloj #m3 {
+    transform: rotate(-78deg) translatex(110px);
+    animation-delay: 120s;
+    transform: rotate(-78deg) translatex(110px);
+    animation-delay: 120s;
+}
+/* ... y asi hasta el minuto 60, restando de 6 en 6 en el rotate y de 60 en 60 segundos en los delay */
+#reloj #m60 {
+    transform: rotate(264deg) translatex(110px);
+    animation-delay: 3540s;
+    transform: rotate(264deg) translatex(110px);
+    animation-delay: 3540s;
+}
+
+/* horas */
+@keyframes horas-efecto {
+    0% {
+        opacity: 1;
+    }
+
+    8.33% {
+        opacity: 1;
+    }
+
+    8.34% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes horas-efecto {
+    0% {
+        opacity: 1;
+    }
+
+    8.33% {
+        opacity: 1;
+    }
+
+    8.34% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#reloj .horas {
+    height: 300px;
+    left: 175px;
+    position: absolute;
+    top: 249px;
+    width: 300px;
+}
+
+#reloj .horas div {
+    background-color: #860086;
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    animation-name: horas-efecto;
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#reloj #h1 {
+    transform: rotate(-180deg) translatex(110px);
+    animation-delay: 0s;
+    transform: rotate(-180deg) translatex(110px);
+    animation-delay: 0s;
+}
+
+#reloj #h2 {
+    transform: rotate(-150deg) translatex(110px);
+    animation-delay: 3600s;
+    transform: rotate(-150deg) translatex(110px);
+    animation-delay: 3600s;
+}
+
+#reloj #h3 {
+    transform: rotate(-120deg) translatex(110px);
+    animation-delay: 7200s;
+    transform: rotate(-120deg) translatex(110px);
+    animation-delay: 7200s;
+}
+
+#reloj #h4 {
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 10800s;
+    transform: rotate(-90deg) translatex(110px);
+    animation-delay: 10800s;
+}
+
+#reloj #h5 {
+    transform: rotate(-60deg) translatex(110px);
+    animation-delay: 14400s;
+    transform: rotate(-60deg) translatex(110px);
+    animation-delay: 14400s;
+}
+
+#reloj #h6 {
+    transform: rotate(-30deg) translatex(110px);
+    animation-delay: 18000s;
+    transform: rotate(-30deg) translatex(110px);
+    animation-delay: 18000s;
+}
+
+#reloj #h7 {
+    transform: rotate(0deg) translatex(110px);
+    animation-delay: 21600s;
+    transform: rotate(0deg) translatex(110px);
+    animation-delay: 21600s;
+}
+
+#reloj #h8 {
+    transform: rotate(30deg) translatex(110px);
+    animation-delay: 25200s;
+    transform: rotate(30deg) translatex(110px);
+    animation-delay: 25200s;
+}
+
+#reloj #h9 {
+    transform: rotate(60deg) translatex(110px);
+    animation-delay: 28800s;
+    transform: rotate(60deg) translatex(110px);
+    animation-delay: 28800s;
+}
+
+#reloj #h10 {
+    transform: rotate(90deg) translatex(110px);
+    animation-delay: 32400s;
+    transform: rotate(90deg) translatex(110px);
+    animation-delay: 32400s;
+}
+
+#reloj #h11 {
+    transform: rotate(120deg) translatex(110px);
+    animation-delay: 36000s;
+    transform: rotate(120deg) translatex(110px);
+    animation-delay: 36000s;
+}
+
+#reloj #h12 {
+    transform: rotate(150deg) translatex(110px);
+    animation-delay: 39600s;
+    transform: rotate(150deg) translatex(110px);
+    animation-delay: 39600s;
+}

@@ -24,6 +24,11 @@ html:hover{
     background-color: aquamarine;
     width: 150px;
     height: 100px;
+    opacity: 0;
+    transition-property: opacity;
+}
+#primero:active{
+    opacity: 1;
 }
 
 /* SEGUNDO BOTON*/

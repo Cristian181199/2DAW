@@ -1,0 +1,89 @@
+/*Damos a cada cara del cubo un alto y ancho igual, asi como la posicion y lo alineamos al centro. */
+.cubo,
+.cubo .cara {
+    width: 200px;
+    height: 200px;
+}
+
+.cubo .cara {
+    position: absolute;
+    border: 1px solid black;
+}
+
+.cubo {
+    margin: 100px auto;
+}
+
+/*Damos un fondo diferente a cada cara del cubo para ver los cambios. */
+.cubo .cara#superior {
+    background-color: orange;
+}
+
+.cubo .cara#frente {
+    background-color: red;
+}
+
+.cubo .cara#atras {
+    background-color: green;
+}
+
+.cubo .cara#derecha {
+    background-color: blue;
+}
+
+.cubo .cara#izquierda {
+    background-color: yellow;
+}
+
+.cubo .cara#inferior {
+    background-color: fuchsia;
+}
+
+/*Damos perspectiva*/
+.cubo {
+    transform-style: preserve-3d;
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+    animation: rotate 2s infinite linear;
+}
+
+/*Formamos el cubo rotando y transladando las caras a su sitio.*/
+.cubo .cara#superior {
+    background-color: orange;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.cubo .cara#frente {
+    background-color: red;
+    transform: translateZ(100px);
+}
+
+.cubo .cara#atras {
+    background-color: green;
+    transform: translateZ(-100px);
+}
+
+.cubo .cara#derecha {
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cubo .cara#izquierda {
+    background-color: yellow;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cubo .cara#inferior {
+    background-color: fuchsia;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* Animacion para rotar el cubo 360 grados*/
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
