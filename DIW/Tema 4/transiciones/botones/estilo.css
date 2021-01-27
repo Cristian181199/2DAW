@@ -4,6 +4,7 @@ html{
     transition-property: border-left, border-top, border-bottom, border-right;
     transition-duration: 5s, 5s, 5s, 5s;
     transition-delay: 15s, 15s, 15s, 15s;
+    background-image: ;
 }
 html:hover{
     border-left: 10% solid skyblue;

@@ -1,4 +1,26 @@
-/*Damos a cada cara del cubo un alto y ancho igual, asi como la posicion y lo alineamos al centro. */
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ff8a66, #fa6da3, #44c7f7, #40face);
+      background-size: 400% 400%;
+      animation: fondo 15s ease infinite;
+  }
+  
+  @keyframes fondo {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
 .cubo,
 .cubo .cara {
     width: 200px;
@@ -12,67 +34,37 @@
 
 .cubo {
     margin: 100px auto;
-}
-
-/*Damos un fondo diferente a cada cara del cubo para ver los cambios. */
-.cubo .cara#superior {
-    background-color: orange;
-}
-
-.cubo .cara#frente {
-    background-color: red;
-}
-
-.cubo .cara#atras {
-    background-color: green;
-}
-
-.cubo .cara#derecha {
-    background-color: blue;
-}
-
-.cubo .cara#izquierda {
-    background-color: yellow;
-}
-
-.cubo .cara#inferior {
-    background-color: fuchsia;
-}
-
-/*Damos perspectiva*/
-.cubo {
     transform-style: preserve-3d;
     transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
-    animation: rotate 2s infinite linear;
+    animation: rotate 5s infinite linear;
 }
 
-/*Formamos el cubo rotando y transladando las caras a su sitio.*/
-.cubo .cara#superior {
+#arriba {
     background-color: orange;
     transform: rotateX(90deg) translateZ(100px);
 }
 
-.cubo .cara#frente {
+#delante {
     background-color: red;
     transform: translateZ(100px);
 }
 
-.cubo .cara#atras {
+#atras {
     background-color: green;
     transform: translateZ(-100px);
 }
 
-.cubo .cara#derecha {
+#derecha {
     background-color: blue;
     transform: rotateY(90deg) translateZ(100px);
 }
 
-.cubo .cara#izquierda {
+#izquierda {
     background-color: yellow;
     transform: rotateY(-90deg) translateZ(100px);
 }
 
-.cubo .cara#inferior {
+#abajo {
     background-color: fuchsia;
     transform: rotateX(-90deg) translateZ(100px);
 }
