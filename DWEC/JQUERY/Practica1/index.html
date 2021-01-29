@@ -1,101 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practia 1</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="jquery.js"></script>
     <script>
         $(document).ready(function () {
-            console.log("ready!");
+                    console.log("ready!");
 
-            var clientesiniciales = [
-                [
-                    ['Juan'],
-                    ['Manco'],
-                    ['19237493D'],
-                    ['1100']
-                ],
-                [
-                    ['Marcos'],
-                    ['Montiel'],
-                    ['23659702F'],
-                    ['50000']
-                ],
-                [
-                    ['Antonio'],
-                    ['Carcajo'],
-                    ['95739302F'],
-                    ['999']
-                ],
-                [
-                    ['Rosa'],
-                    ['Bermejo'],
-                    ['98765432F'],
-                    ['50']
-                ],
-                [
-                    ['Jesus'],
-                    ['Barrios'],
-                    ['98563412F'],
-                    ['7834587']
-                ],
-                [
-                    ['Jose Antonio'],
-                    ['Gordijuela'],
-                    ['12345678F'],
-                    ['500']
-                ],
-                [
-                    ['Rafael'],
-                    ['Montiel'],
-                    ['98725162H'],
-                    ['87125']
-                ],
-                [
-                    ['Manuel'],
-                    ['Antunez'],
-                    ['18293048J'],
-                    ['98751']
-                ],
-                [
-                    ['Martin'],
-                    ['Martinez'],
-                    ['09726332T'],
-                    ['763458']
-                ],
-                [
-                    ['Juanka'],
-                    ['Melano'],
-                    ['98925432G'],
-                    ['7835']
-                ],
-            ];
+                    var clientesiniciales = [
+                        [
+                            ['Juan'],
+                            ['Manco'],
+                            ['19237493D'],
+                            ['1100']
+                        ],
+                        [
+                            ['Marcos'],
+                            ['Montiel'],
+                            ['23659702F'],
+                            ['50000']
+                        ],
+                        [
+                            ['Antonio'],
+                            ['Carcajo'],
+                            ['95739302F'],
+                            ['999']
+                        ],
+                        [
+                            ['Rosa'],
+                            ['Bermejo'],
+                            ['98765432F'],
+                            ['50']
+                        ],
+                        [
+                            ['Jesus'],
+                            ['Barrios'],
+                            ['98563412F'],
+                            ['7834587']
+                        ],
+                        [
+                            ['Jose Antonio'],
+                            ['Gordijuela'],
+                            ['12345678F'],
+                            ['500']
+                        ],
+                        [
+                            ['Rafael'],
+                            ['Montiel'],
+                            ['98725162H'],
+                            ['87125']
+                        ],
+                        [
+                            ['Manuel'],
+                            ['Antunez'],
+                            ['18293048J'],
+                            ['98751']
+                        ],
+                        [
+                            ['Martin'],
+                            ['Martinez'],
+                            ['09726332T'],
+                            ['763458']
+                        ],
+                        [
+                            ['Juanka'],
+                            ['Melano'],
+                            ['98925432G'],
+                            ['7835']
+                        ],
+                    ];
 
 
-            for (i = 0; i < clientesiniciales.length; i++) {
+                    for (i = 0; i < clientesiniciales.length; i++) {
 
-                var celda1 = $("<td>" + clientesiniciales[i][0] + "</td>");
-                var celda2 = $("<td>" + clientesiniciales[i][1] + "</td>");
-                var celda3 = $("<td>" + clientesiniciales[i][2] + "</td>");
-                var celda4 = $("<td>" + clientesiniciales[i][3] + "</td>");
+                        var celda1 = $("<td>" + clientesiniciales[i][0] + "</td>");
+                        var celda2 = $("<td>" + clientesiniciales[i][1] + "</td>");
+                        var celda3 = $("<td>" + clientesiniciales[i][2] + "</td>");
+                        var celda4 = $("<td>" + clientesiniciales[i][3] + "</td>");
+                        var celda5 = $("<td>" + "<button id='eliminar'> Eliminar </button>" + "</td>");
 
-                var fila = $("<tr> </tr>");
-                fila.append(celda1);
-                fila.append(celda2);
-                fila.append(celda3);
-                fila.append(celda4);
 
-                $("#mitabla tbody").append(fila);
-            }
-        });
+                        var fila = $("<tr> </tr>");
+                        fila.append(celda1);
+                        fila.append(celda2);
+                        fila.append(celda3);
+                        fila.append(celda4);
+                        fila.append(celda5);
 
-        $("#añadir").click(function (event) {
-            event.preventDefault();
-            
-        });
+                        $("#mitabla tbody").append(fila);
+                    }
+
+                    $("#eliminar").click(function (event) {
+                        event.preventDefault();
+
+                        $("#eliminar").next("tr").detach
+
+                    });
+
+                    $("#añadir").click(function (event) {
+                            event.preventDefault();
+
+                            var nombre = $('#nombre').val();
+                            var apellido = $('#apellido').val();
+                            var dni = $('#dni').val();
+                            var dinero = $('#dinero').val();
+
+                            var añadircliente = [
+                                [
+                                    [nombre],
+                                    [apellido],
+                                    [dni],
+                                    [dinero]
+                                ],
+                            ];
+
+                            for (i = 0; i < añadircliente.length; i++) {
+
+                                var celda1 = $("<td>" + añadircliente[i][0] + "</td>");
+                                var celda2 = $("<td>" + añadircliente[i][1] + "</td>");
+                                var celda3 = $("<td>" + añadircliente[i][2] + "</td>");
+                                var celda4 = $("<td>" + añadircliente[i][3] + "</td>");
+                                var celda5 = $("<button id='eliminar'> Eliminar </button>");
+
+                                var fila = $("<tr> </tr>");
+                                fila.append(celda1);
+                                fila.append(celda2);
+                                fila.append(celda3);
+                                fila.append(celda4);
+                                fila.append(celda5);
+
+                                $("#mitabla tbody").append(fila);
+
+                            }
+
+                            });
+                    });
     </script>
 </head>
 
@@ -110,6 +153,7 @@
             <th>Apellido</th>
             <th>DNI</th>
             <th>Dinero que debe</th>
+            <th>Eliminar</th>
         </thead>
 
         <tbody>
@@ -118,7 +162,7 @@
 
     </table>
 
-    <form action="">
+    <form action="" id="formulario">
 
         <label for="">Nombre: </label>
         <input id="nombre" type="text" placeholder="Nombre">
