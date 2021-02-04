@@ -1,26 +1,72 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
-#reloj {
-    width: 500px;
-    height: 500px;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(reloj.jpeg);
+}
+
+.reloj {
+    background: url(reloj.jpeg) no-repeat center;
     background-size: cover;
-    border: 1px solid black;
-    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hora {
+    width: 9px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    animation-name: horas;
+    animation-duration: 3600s;
+    animation-delay: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes horas {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+#minutos {
+    width: 7px;
+    height: 180px;
+    background-color: rebeccapurple;
+    position: absolute;
+    animation-name: min;
+    animation-duration: 600s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes min {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+#segundos {
     width: 5px;
-    height: 150px;
-    background-color: aqua;
+    height: 250px;
+    background-color: chartreuse;
+    position: absolute;
+    animation-name: sec;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sec {
+    0% {
+        transform: rotate(-360deg);
+    }
 }
