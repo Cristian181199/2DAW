@@ -119,15 +119,17 @@ body {
 /*
 * Aspecto de la web en una pantalla de 1000px
 */
-@media screen and (max-width: 1000px) {
-    #extras {
-        float: none;
-        background: gray;
-        margin-left: 22.5%;
-        width: 80%;
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+    #content {
+        float: right;
+        margin-left: 0;
+        margin-right: 50px;
     }
-    #content{
-        width: 80%;
+
+    #extras {
+        width: 550px;
+        margin-right: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -137,28 +139,27 @@ body {
 */
 @media screen and (max-width: 480px) {
     #container {
-        float: left;
+        float: none;
         width: 480px;
-        background: #bbb;
+        height: 100%;
     }
 
     #nav {
         float: none;
         width: 480px;
-        background: lime;
     }
 
     #content {
         float: none;
         width: 480px;
-        margin: 0 0 0 0px;
-        background: yellow;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     #extras {
         float: none;
         width: 480px;
-        background: gray;
+        margin-bottom: 20px;
     }
 
     .feature-image {
