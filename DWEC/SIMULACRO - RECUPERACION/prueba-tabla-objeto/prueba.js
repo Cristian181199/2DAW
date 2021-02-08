@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 
     var langostino = new Producto("Langostinos", 20, 3);
     var manzanilla = new Producto("Manzanilla", 10, 3);
-    var arrayProductos = [langostino, manzanilla, peras]
+    var arrayProductos = [langostino, manzanilla]
 
     //Capturamos div
     var principal = document.getElementById("principal");
