@@ -50,11 +50,17 @@ function generarFormulario() {
     var botonAñadir = document.createElement("button");
     botonAñadir.innerHTML = "Añadir";
     botonAñadir.id = "añadir";
+    botonAñadir.type = "submit";
     div.appendChild(botonVolver);
     div.appendChild(botonAñadir);
 
+    var botonGenerador = document.querySelector("#generador");
+    botonGenerador.disabled = true;
+
     botonVolver.addEventListener('click', () => {
         volverAtras();
+        var botonGenerador = document.querySelector("#generador");
+        botonGenerador.disabled = false;
     });
 
     function volverAtras() {
@@ -62,13 +68,4 @@ function generarFormulario() {
             div.removeChild(div.firstChild);
         }
     }
-}
-
-function validarFormulario() {
-    //Capturamos los inputs
-    var nombre = document.querySelector("#nombre");
-    var precio = document.querySelector("#precio");
-    var stock = document.querySelector("#stock");
-    
-
 }
