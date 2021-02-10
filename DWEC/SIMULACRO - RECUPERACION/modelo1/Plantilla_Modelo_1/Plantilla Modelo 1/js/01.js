@@ -120,6 +120,18 @@ window.addEventListener('load', () => {
         });
 
 
+        /*Validacion formulario*/
+        var todosCampos = document.querySelector('#form').elements;
+
+
+        for (let i = 0; i < todosCampos.length; i++) {
+            console.log(todosCampos[i]);
+
+        }
+
+
+
+
     });
 
     /*Capturamos el evento click sobre el boton Entrar*/
@@ -217,14 +229,7 @@ window.addEventListener('load', () => {
                 } else if (contador == 1) {
                     botonPrestamo.disabled = false;
                     //Capturar el que esta cheked
-                    var tr = document.querySelectorAll('tr');
-                    for (let i = 0; i < tr.length; i++) {
-                        if (tr[i].lastElementChild.childNodes[0].checked) {
-                            var titulo = tr[i].childNodes[0].innerText;
-                            var autor = tr[i].childNodes[1].innerText;
-                        }
-
-                    }
+                    console.log(checkboxs[i]);
                     botonPrestamo.addEventListener('click', () => {
 
                     });
